@@ -4,61 +4,91 @@
     "nodestats": {
         "nodes": [
             {
-                "id": "org.knime.base.node.io.filehandling.csv.reader.CSVTableReaderNodeFactory",
-                "nodename": "CSV Reader",
-                "nrexecs": 0,
-                "nrfails": 0,
-                "exectime": 0,
-                "nrcreated": 0,
-                "successor": "org.knime.base.node.preproc.unpivot2.Unpivot2NodeFactory",
-                "successornodename": "Unpivot"
-            },
-            {
                 "id": "org.knime.xml.node.rcombine.XMLRowCombinerNodeFactory",
                 "nodename": "XML Row Combiner",
-                "nrexecs": 0,
-                "nrfails": 7,
-                "exectime": 20,
-                "nrcreated": 1,
-                "successor": "org.knime.xml.node.filehandling.writer.XMLWriterNodeFactory2",
-                "successornodename": "XML Writer"
+                "nrexecs": 7,
+                "nrfails": 0,
+                "exectime": 126,
+                "nrcreated": 4,
+                "successor": "org.knime.json.node.fromxml.XMLToJSONNodeFactory",
+                "successornodename": "XML to JSON"
             },
             {
-                "id": "org.knime.xml.node.columntoxml.ColumnToXMLNodeFactory",
-                "nodename": "Column to XML",
-                "nrexecs": 2,
-                "nrfails": 9,
-                "exectime": 96,
+                "id": "org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory",
+                "nodename": "Column Filter",
+                "nrexecs": 18,
+                "nrfails": 0,
+                "exectime": 13,
                 "nrcreated": 0,
                 "successor": "org.knime.xml.node.rcombine.XMLRowCombinerNodeFactory",
                 "successornodename": "XML Row Combiner"
             },
             {
-                "id": "org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory",
-                "nodename": "Column Filter",
-                "nrexecs": 2,
+                "id": "org.knime.base.node.io.filehandling.csv.reader.CSVTableReaderNodeFactory",
+                "nodename": "CSV Reader",
+                "nrexecs": 1,
                 "nrfails": 0,
-                "exectime": 1,
+                "exectime": 161,
                 "nrcreated": 0,
-                "successor": "n/a",
-                "successornodename": "n/a"
+                "successor": "org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory",
+                "successornodename": "Column Filter"
             },
             {
                 "id": "org.knime.base.node.preproc.groupby.GroupByNodeFactory",
                 "nodename": "GroupBy",
-                "nrexecs": 7,
+                "nrexecs": 4,
                 "nrfails": 0,
                 "exectime": 208,
-                "nrcreated": 0,
+                "nrcreated": 2,
+                "successor": "org.knime.base.node.preproc.joiner3.Joiner3NodeFactory",
+                "successornodename": "Joiner"
+            },
+            {
+                "id": "org.knime.database.node.manipulation.groupby.DBGroupByNodeFactory",
+                "nodename": "DB GroupBy",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 1,
                 "successor": "n/a",
                 "successornodename": "n/a"
             },
             {
-                "id": "org.knime.base.node.preproc.unpivot2.Unpivot2NodeFactory",
-                "nodename": "Unpivot",
-                "nrexecs": 1,
+                "id": "org.knime.base.node.preproc.joiner3.Joiner3NodeFactory",
+                "nodename": "Joiner",
+                "nrexecs": 10,
                 "nrfails": 0,
-                "exectime": 5,
+                "exectime": 71,
+                "nrcreated": 1,
+                "successor": "org.knime.xml.node.columntoxml.ColumnToXMLNodeFactory",
+                "successornodename": "Column to XML"
+            },
+            {
+                "id": "org.knime.xml.node.columntoxml.ColumnToXMLNodeFactory",
+                "nodename": "Column to XML",
+                "nrexecs": 27,
+                "nrfails": 0,
+                "exectime": 225,
+                "nrcreated": 0,
+                "successor": "org.knime.xml.node.ccombine2.XMLColumnCombinerNodeFactory",
+                "successornodename": "XML Column Combiner"
+            },
+            {
+                "id": "org.knime.xml.node.ccombine2.XMLColumnCombinerNodeFactory",
+                "nodename": "XML Column Combiner",
+                "nrexecs": 12,
+                "nrfails": 0,
+                "exectime": 102,
+                "nrcreated": 0,
+                "successor": "org.knime.xml.node.rcombine.XMLRowCombinerNodeFactory",
+                "successornodename": "XML Row Combiner"
+            },
+            {
+                "id": "org.knime.json.node.fromxml.XMLToJSONNodeFactory",
+                "nodename": "XML to JSON",
+                "nrexecs": 2,
+                "nrfails": 0,
+                "exectime": 41,
                 "nrcreated": 1,
                 "successor": "n/a",
                 "successornodename": "n/a"
@@ -69,10 +99,10 @@
         "wrappedNodes": {
         },
         "createdVia": {
-            "WEB_UI": 2
+            "WEB_UI": 9
         }
     },
-    "uptime": 1883737,
+    "uptime": 4788690,
     "workflowsOpened": 1,
     "remoteWorkflowsOpened": 0,
     "columnarStorageWorkflowsOpened": 0,
@@ -80,10 +110,10 @@
     "workflowsExported": 0,
     "webUIPerspectiveSwitches": 0,
     "javaUIPerspectiveSwitches": 0,
-    "lastUsedPerspective": "starter",
-    "launches": 1,
+    "lastUsedPerspective": "none",
+    "launches": 2,
     "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
-    "timeSinceLastStart": 1883737,
+    "timeSinceLastStart": 4358233,
     "crashes": 0,
     "properlyShutDown": false
 }

@@ -1,5 +1,6 @@
 InvoiceID,InvoiceDate,CustomerID,CustomerName,ProductID,ProductName,Quantity,UnitPrice,TotalPrice,PaymentMethod
 INV001,2024-01-15,CUST001,John Doe,PRD001,Laptop,1,1200,1200,Credit Card
+INV001,2024-01-15,CUST001,John Doe,PRD002,Smartphone,2,800,1600,Credit Card
 INV002,2024-01-16,CUST002,Jane Smith,PRD002,Smartphone,2,800,1600,PayPal
 INV003,2024-01-17,CUST003,David Johnson,PRD003,Headphones,5,150,750,Bank Transfer
 INV004,2024-01-18,CUST004,Sarah Brown,PRD004,Tablet,3,500,1500,Credit Card

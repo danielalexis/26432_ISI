@@ -597,3 +597,408 @@ Caused by: org.knime.core.node.InvalidSettingsException: The specified file invo
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.base/java.lang.Thread.run(Unknown Source)
+2024-10-21 18:43:33,131 : ERROR : KNIME-Worker-5-XML Row Combiner 3:15 :  : Node : XML Row Combiner : 3:15 : Execute failed: java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 11
+java.lang.IllegalStateException: java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 11
+	at org.knime.xml.node.rcombine.XMLRowCombinerNodeModel.execute(XMLRowCombinerNodeModel.java:233)
+	at org.knime.core.node.NodeModel.execute(NodeModel.java:812)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 11
+	at org.knime.core.data.container.BlobSupportDataRow.getCell(BlobSupportDataRow.java:144)
+	at org.knime.xml.node.rcombine.XMLRowCombinerNodeModel.execute(XMLRowCombinerNodeModel.java:219)
+	... 14 more
+2024-10-21 18:43:34,918 : ERROR : KNIME-Worker-6-XML Row Combiner 3:15 :  : Node : XML Row Combiner : 3:15 : Execute failed: java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 11
+java.lang.IllegalStateException: java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 11
+	at org.knime.xml.node.rcombine.XMLRowCombinerNodeModel.execute(XMLRowCombinerNodeModel.java:233)
+	at org.knime.core.node.NodeModel.execute(NodeModel.java:812)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 11
+	at org.knime.core.data.container.BlobSupportDataRow.getCell(BlobSupportDataRow.java:144)
+	at org.knime.xml.node.rcombine.XMLRowCombinerNodeModel.execute(XMLRowCombinerNodeModel.java:219)
+	... 14 more
+2024-10-21 18:46:01,831 : WARN  : main :  : Node : GroupBy : 3:10 : No aggregation column defined
+2024-10-21 18:46:03,090 : WARN  : main :  : Node : GroupBy : 3:10 : No aggregation column defined
+2024-10-21 18:46:04,680 : WARN  : KNIME-Worker-7-CSV Reader 3:1 :  : Node : GroupBy : 3:10 : No aggregation column defined
+2024-10-21 18:46:53,898 : WARN  : KNIME-Worker-8-Column Filter 3:11 :  : Node : GroupBy : 3:10 : No aggregation column defined
+2024-10-21 18:48:00,408 : ERROR : main :  : Node : XML Column Combiner : 3:17 : Could not save model
+java.lang.NullPointerException: Cannot invoke "org.knime.core.node.util.filter.column.DataColumnSpecFilterConfiguration.saveConfiguration(org.knime.core.node.NodeSettingsWO)" because "this.m_filterConfiguration" is null
+	at org.knime.xml.node.ccombine2.XMLColumnCombinerNodeSettings.saveSettings(XMLColumnCombinerNodeSettings.java:271)
+	at org.knime.xml.node.ccombine2.XMLColumnCombinerNodeModel.saveSettingsTo(XMLColumnCombinerNodeModel.java:310)
+	at org.knime.core.node.Node.saveModelSettingsTo(Node.java:2383)
+	at org.knime.core.node.workflow.NativeNodeContainer.performSaveModelSettingsTo(NativeNodeContainer.java:1175)
+	at org.knime.core.node.workflow.SingleNodeContainer.saveModelSettingsTo(SingleNodeContainer.java:1054)
+	at org.knime.core.node.workflow.SingleNodeContainer.saveSNCSettings(SingleNodeContainer.java:1041)
+	at org.knime.core.node.workflow.SingleNodeContainer.saveSettings(SingleNodeContainer.java:1010)
+	at org.knime.core.node.workflow.NativeNodeContainer.getDialogPaneWithSettings(NativeNodeContainer.java:1397)
+	at org.knime.core.node.workflow.NodeContainer.getDialogPaneWithSettings(NodeContainer.java:1089)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.getDialogPaneWithSettings(NodeContainerWrapper.java:130)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.lambda$0(WrappedNodeDialog.java:155)
+	at org.knime.workbench.ui.async.AsyncUtil.ncAsyncSwitchRethrow(AsyncUtil.java:247)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.<init>(WrappedNodeDialog.java:155)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:959)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:868)
+	at org.knime.ui.java.api.NodeAPI.openNodeDialog(NodeAPI.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor156.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.knime.ui.java.api.DesktopAPI.invokeMethod(DesktopAPI.java:174)
+	at org.knime.ui.java.api.DesktopAPI.lambda$1(DesktopAPI.java:145)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:211)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+2024-10-21 18:48:56,834 : ERROR : KNIME-Worker-8-XML Row Combiner 3:15 :  : Node : XML Row Combiner : 3:15 : Execute failed: java.lang.ArrayIndexOutOfBoundsException
+java.lang.IllegalStateException: java.lang.ArrayIndexOutOfBoundsException
+	at org.knime.xml.node.rcombine.XMLRowCombinerNodeModel.execute(XMLRowCombinerNodeModel.java:233)
+	at org.knime.core.node.NodeModel.execute(NodeModel.java:812)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+2024-10-21 18:49:40,146 : WARN  : comm-pool-thread-16 :  : Node : XML Writer : 3:18 : Auto-guessed column 'XML' as XML input column
+2024-10-21 18:49:40,147 : WARN  : comm-pool-thread-16 :  : Node : XML Writer : 3:18 : Please specify a folder
+2024-10-21 18:51:14,636 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:17 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:13, 3:15, 3:16, 3:18, 3:19] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 18:51:14,636 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:17 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:13, 3:15, 3:16, 3:18, 3:19] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-21 18:51:17,761 : WARN  : comm-pool-thread-16 :  : Node : XML Row Combiner : 3:19 : No XML column in input table.
+2024-10-21 18:55:57,176 : ERROR : main :  : Node : XML Column Combiner : 3:21 : Could not save model
+java.lang.NullPointerException: Cannot invoke "org.knime.core.node.util.filter.column.DataColumnSpecFilterConfiguration.saveConfiguration(org.knime.core.node.NodeSettingsWO)" because "this.m_filterConfiguration" is null
+	at org.knime.xml.node.ccombine2.XMLColumnCombinerNodeSettings.saveSettings(XMLColumnCombinerNodeSettings.java:271)
+	at org.knime.xml.node.ccombine2.XMLColumnCombinerNodeModel.saveSettingsTo(XMLColumnCombinerNodeModel.java:310)
+	at org.knime.core.node.Node.saveModelSettingsTo(Node.java:2383)
+	at org.knime.core.node.workflow.NativeNodeContainer.performSaveModelSettingsTo(NativeNodeContainer.java:1175)
+	at org.knime.core.node.workflow.SingleNodeContainer.saveModelSettingsTo(SingleNodeContainer.java:1054)
+	at org.knime.core.node.workflow.SingleNodeContainer.saveSNCSettings(SingleNodeContainer.java:1041)
+	at org.knime.core.node.workflow.SingleNodeContainer.saveSettings(SingleNodeContainer.java:1010)
+	at org.knime.core.node.workflow.NativeNodeContainer.getDialogPaneWithSettings(NativeNodeContainer.java:1397)
+	at org.knime.core.node.workflow.NodeContainer.getDialogPaneWithSettings(NodeContainer.java:1089)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.getDialogPaneWithSettings(NodeContainerWrapper.java:130)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.lambda$0(WrappedNodeDialog.java:155)
+	at org.knime.workbench.ui.async.AsyncUtil.ncAsyncSwitchRethrow(AsyncUtil.java:247)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.<init>(WrappedNodeDialog.java:155)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:959)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:868)
+	at org.knime.ui.java.api.NodeAPI.openNodeDialog(NodeAPI.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor156.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.knime.ui.java.api.DesktopAPI.invokeMethod(DesktopAPI.java:174)
+	at org.knime.ui.java.api.DesktopAPI.lambda$1(DesktopAPI.java:145)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:211)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+2024-10-21 18:56:15,836 : WARN  : comm-pool-thread-20 :  : Node : XML Column Combiner : 3:21 : Cannot create column XMLsince it is already in the input.
+2024-10-21 18:59:39,256 : WARN  : comm-pool-thread-20 :  : Node : Column to XML : 3:23 : Cannot create column "XML" since it is already in the input.
+2024-10-21 19:01:15,432 : ERROR : KNIME-Worker-12-XML Writer 3:18 :  : Node : XML Writer : 3:18 : Execute failed: The file 'test/File_0.xml' already exists and must not be overwritten
+java.lang.IllegalStateException: The file 'test/File_0.xml' already exists and must not be overwritten
+	at org.knime.filehandling.core.node.table.writer.AbstractMultiTableWriterCellFactory.write(AbstractMultiTableWriterCellFactory.java:151)
+	at org.knime.filehandling.core.node.table.writer.AbstractMultiTableWriterCellFactory.getCells(AbstractMultiTableWriterCellFactory.java:133)
+	at org.knime.core.data.container.CellFactory.getCells(CellFactory.java:98)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewCellsForRow(RearrangeColumnsTable.java:565)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewColsSynchronously(RearrangeColumnsTable.java:484)
+	at org.knime.core.data.container.RearrangeColumnsTable.create(RearrangeColumnsTable.java:412)
+	at org.knime.core.data.container.BufferedTableBackend.rearrange(BufferedTableBackend.java:212)
+	at org.knime.core.node.ExecutionContext.createColumnRearrangeTable(ExecutionContext.java:467)
+	at org.knime.filehandling.core.node.table.writer.AbstractMultiTableWriterNodeModel.execute(AbstractMultiTableWriterNodeModel.java:323)
+	at org.knime.filehandling.core.node.table.writer.AbstractMultiTableWriterNodeModel.execute(AbstractMultiTableWriterNodeModel.java:1)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: java.nio.file.FileAlreadyExistsException: test/File_0.xml
+	at org.knime.filehandling.core.connections.base.BaseFileSystemProvider.newOutputStream(BaseFileSystemProvider.java:494)
+	at java.base/java.nio.file.Files.newOutputStream(Unknown Source)
+	at org.knime.filehandling.core.connections.FSFiles.newOutputStream(FSFiles.java:139)
+	at org.knime.filehandling.core.node.table.writer.AbstractMultiTableWriterCellFactory.getOutputStream(AbstractMultiTableWriterCellFactory.java:169)
+	at org.knime.filehandling.core.node.table.writer.AbstractMultiTableWriterCellFactory.write(AbstractMultiTableWriterCellFactory.java:147)
+	... 22 more
+2024-10-21 19:01:16,388 : ERROR : KNIME-Worker-13-XML Writer 3:18 :  : Node : XML Writer : 3:18 : Execute failed: The file 'test/File_0.xml' already exists and must not be overwritten
+java.lang.IllegalStateException: The file 'test/File_0.xml' already exists and must not be overwritten
+	at org.knime.filehandling.core.node.table.writer.AbstractMultiTableWriterCellFactory.write(AbstractMultiTableWriterCellFactory.java:151)
+	at org.knime.filehandling.core.node.table.writer.AbstractMultiTableWriterCellFactory.getCells(AbstractMultiTableWriterCellFactory.java:133)
+	at org.knime.core.data.container.CellFactory.getCells(CellFactory.java:98)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewCellsForRow(RearrangeColumnsTable.java:565)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewColsSynchronously(RearrangeColumnsTable.java:484)
+	at org.knime.core.data.container.RearrangeColumnsTable.create(RearrangeColumnsTable.java:412)
+	at org.knime.core.data.container.BufferedTableBackend.rearrange(BufferedTableBackend.java:212)
+	at org.knime.core.node.ExecutionContext.createColumnRearrangeTable(ExecutionContext.java:467)
+	at org.knime.filehandling.core.node.table.writer.AbstractMultiTableWriterNodeModel.execute(AbstractMultiTableWriterNodeModel.java:323)
+	at org.knime.filehandling.core.node.table.writer.AbstractMultiTableWriterNodeModel.execute(AbstractMultiTableWriterNodeModel.java:1)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: java.nio.file.FileAlreadyExistsException: test/File_0.xml
+	at org.knime.filehandling.core.connections.base.BaseFileSystemProvider.newOutputStream(BaseFileSystemProvider.java:494)
+	at java.base/java.nio.file.Files.newOutputStream(Unknown Source)
+	at org.knime.filehandling.core.connections.FSFiles.newOutputStream(FSFiles.java:139)
+	at org.knime.filehandling.core.node.table.writer.AbstractMultiTableWriterCellFactory.getOutputStream(AbstractMultiTableWriterCellFactory.java:169)
+	at org.knime.filehandling.core.node.table.writer.AbstractMultiTableWriterCellFactory.write(AbstractMultiTableWriterCellFactory.java:147)
+	... 22 more
+2024-10-21 19:01:26,673 : WARN  : KNIME-Worker-12-XML Writer 3:18 :  : Node : XML Writer : 3:18 : Skipped 25 row(s) due to missing values.
+2024-10-21 19:01:35,225 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:21 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:13, 3:15, 3:16, 3:18, 3:19, 3:20, 3:22, 3:23] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 19:01:35,226 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:21 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:13, 3:15, 3:16, 3:18, 3:19, 3:20, 3:22, 3:23] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-21 19:02:02,025 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:22 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:13, 3:15, 3:16, 3:18, 3:19, 3:20, 3:23] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 19:02:02,025 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:22 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:13, 3:15, 3:16, 3:18, 3:19, 3:20, 3:23] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-21 19:02:10,690 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:19 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:13, 3:15, 3:16, 3:18, 3:20, 3:23] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 19:02:10,690 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:19 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:13, 3:15, 3:16, 3:18, 3:20, 3:23] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-21 19:04:54,166 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:25 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:13, 3:15, 3:16, 3:18, 3:20, 3:23, 3:24] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 19:04:54,166 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:25 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:13, 3:15, 3:16, 3:18, 3:20, 3:23, 3:24] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-21 19:06:38,543 : WARN  : comm-pool-thread-22 :  : Node : Column to XML : 3:20 : Cannot create column "XML" since it is already in the input.
+2024-10-21 19:07:28,871 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:15 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:13, 3:16, 3:18, 3:20, 3:23, 3:24] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 19:07:28,871 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:15 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:13, 3:16, 3:18, 3:20, 3:23, 3:24] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-21 19:08:57,837 : WARN  : comm-pool-thread-22 :  : Node : Generic JavaScript View (JavaScript) : 3:26 : No script defined
+2024-10-21 19:11:06,021 : WARN  : comm-pool-thread-25 :  : Node : Column to XML : 3:27 : No such column in input table: InvoiceDate
+2024-10-21 19:11:30,875 : WARN  : comm-pool-thread-25 :  : Node : Column to XML : 3:28 : Cannot create column "XML1" since it is already in the input.
+2024-10-21 19:11:41,522 : WARN  : main :  : Node : Column to XML : 3:28 : Cannot create column "XML1" since it is already in the input.
+2024-10-21 19:11:42,261 : WARN  : main :  : Node : Column to XML : 3:28 : Cannot create column "XML1" since it is already in the input.
+2024-10-21 19:11:44,170 : WARN  : KNIME-Worker-17-Column to XML 3:27 :  : Node : Column to XML : 3:28 : Cannot create column "XML1" since it is already in the input.
+2024-10-21 19:12:07,216 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:29 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:13, 3:16, 3:20, 3:23, 3:24, 3:25, 3:26, 3:27, 3:28] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 19:12:07,222 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:29 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:13, 3:16, 3:20, 3:23, 3:24, 3:25, 3:26, 3:27, 3:28] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-21 19:12:10,881 : WARN  : comm-pool-thread-25 :  : Node : XML Column Combiner : 3:29 : Cannot create column XML (#1)since it is already in the input.
+2024-10-21 19:12:16,774 : WARN  : main :  : Node : XML Column Combiner : 3:29 : Cannot create column XML (#1)since it is already in the input.
+2024-10-21 19:13:45,297 : WARN  : comm-pool-thread-26 :  : Node : XML Row Combiner : 3:30 : Auto guessing: using column "XML (#1)".
+2024-10-21 19:14:30,525 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:30 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:13, 3:16, 3:20, 3:23, 3:24, 3:25, 3:26, 3:27, 3:28, 3:29] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 19:14:30,525 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:30 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:13, 3:16, 3:20, 3:23, 3:24, 3:25, 3:26, 3:27, 3:28, 3:29] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-21 19:16:45,071 : WARN  : comm-pool-thread-28 :  : Node : Column to XML : 3:23 : No such column in input table: InvoiceDate
+2024-10-21 19:16:58,821 : WARN  : comm-pool-thread-27 :  : Node : Column to XML : 3:20 : Cannot create column "XML1" since it is already in the input.
+2024-10-21 19:18:43,545 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:13 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 19:18:43,545 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:13 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-21 19:19:18,412 : WARN  : comm-pool-thread-28 :  : Node : Column to XML : 3:23 : No such column in input table: InvoiceDate
+2024-10-21 19:20:20,349 : WARN  : main :  : Node : Column to XML : 3:23 : No such column in input table: InvoiceDate
+2024-10-21 19:20:20,898 : WARN  : main :  : Node : Column to XML : 3:23 : No such column in input table: InvoiceDate
+2024-10-21 19:20:29,534 : WARN  : main :  : Node : Column to XML : 3:23 : No such column in input table: InvoiceDate
+2024-10-21 19:20:29,959 : WARN  : main :  : Node : Column to XML : 3:23 : No such column in input table: InvoiceDate
+2024-10-21 19:20:41,421 : WARN  : comm-pool-thread-28 :  : Node : Column to XML : 3:35 : Cannot create column "XML1" since it is already in the input.
+2024-10-21 19:20:54,760 : WARN  : main :  : Node : Column to XML : 3:35 : Cannot create column "XML1" since it is already in the input.
+2024-10-21 19:20:55,533 : WARN  : main :  : Node : Column to XML : 3:35 : Cannot create column "XML1" since it is already in the input.
+2024-10-21 19:21:08,882 : WARN  : comm-pool-thread-28 :  : Node : Column to XML : 3:36 : Cannot create column "XMMML11" since it is already in the input.
+2024-10-21 19:21:16,833 : WARN  : main :  : Node : Column to XML : 3:36 : Cannot create column "XMMML11" since it is already in the input.
+2024-10-21 19:21:17,135 : WARN  : main :  : Node : Column to XML : 3:36 : Cannot create column "XMMML11" since it is already in the input.
+2024-10-21 19:21:22,961 : WARN  : comm-pool-thread-28 :  : Node : Column to XML : 3:23 : No such column in input table: InvoiceDate
+2024-10-21 19:21:24,829 : WARN  : main :  : Node : Column to XML : 3:23 : No such column in input table: InvoiceDate
+2024-10-21 19:21:25,049 : WARN  : main :  : Node : Column to XML : 3:23 : No such column in input table: InvoiceDate
+2024-10-21 19:21:26,744 : WARN  : KNIME-Worker-22-Column Filter 3:33 :  : Node : Column to XML : 3:23 : No such column in input table: InvoiceDate
+2024-10-21 19:22:50,835 : WARN  : main :  : Node : Column to XML : 3:23 : No such column in input table: InvoiceDate
+2024-10-21 19:22:51,832 : WARN  : main :  : Node : Column to XML : 3:23 : No such column in input table: InvoiceDate
+2024-10-21 19:23:31,077 : WARN  : comm-pool-thread-31 :  : Node : XML Column Combiner : 3:24 : Cannot create column XML (#1)since it is already in the input.
+2024-10-21 19:23:47,895 : WARN  : main :  : Node : XML Column Combiner : 3:29 : Cannot create column XML (#1)1since it is already in the input.
+2024-10-21 19:23:48,147 : WARN  : main :  : Node : XML Column Combiner : 3:29 : Cannot create column XML (#1)1since it is already in the input.
+2024-10-21 19:24:58,292 : WARN  : comm-pool-thread-32 :  : Node : XML Column Combiner : 3:29 : Cannot create column XML (#1)1since it is already in the input.
+2024-10-21 19:29:28,761 : WARN  : comm-pool-thread-35 :  : Node : Column to XML : 3:37 : Cannot create column "XML1" since it is already in the input.
+2024-10-21 19:29:37,265 : WARN  : main :  : Node : Column to XML : 3:37 : Cannot create column "XML1" since it is already in the input.
+2024-10-21 19:29:37,637 : WARN  : main :  : Node : Column to XML : 3:37 : Cannot create column "XML1" since it is already in the input.
+2024-10-21 20:23:38,691 : WARN  : comm-pool-thread-1 :  : Node : XML Row Combiner : 3:38 : Auto guessing: using column "XML (#1)1".
+2024-10-21 20:23:48,028 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:38 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:37] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 20:23:48,028 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:38 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:37] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-21 20:49:28,509 : WARN  : comm-pool-thread-6 :  : Node : GroupBy : 3:40 : No grouping column included. Aggregate complete table.
+2024-10-21 20:49:28,510 : WARN  : comm-pool-thread-6 :  : Node : GroupBy : 3:40 : No aggregation column defined
+2024-10-21 20:49:28,511 : WARN  : comm-pool-thread-6 :  : Node : GroupBy : 3:40 : Please select at least one group or aggregation column
+2024-10-21 20:49:40,875 : WARN  : comm-pool-thread-7 :  : Node : GroupBy : 3:40 : No grouping column included. Aggregate complete table.
+2024-10-21 20:49:40,875 : WARN  : comm-pool-thread-7 :  : Node : GroupBy : 3:40 : No aggregation column defined
+2024-10-21 20:49:40,875 : WARN  : comm-pool-thread-7 :  : Node : GroupBy : 3:40 : Please select at least one group or aggregation column
+2024-10-21 20:49:45,291 : WARN  : main :  : Node : GroupBy : 3:40 : No aggregation column defined
+2024-10-21 20:49:45,292 : WARN  : main :  : Node : GroupBy : 3:40 : All columns selected as group by column
+2024-10-21 20:49:47,127 : WARN  : main :  : Node : GroupBy : 3:40 : No aggregation column defined
+2024-10-21 20:49:47,127 : WARN  : main :  : Node : GroupBy : 3:40 : All columns selected as group by column
+2024-10-21 20:49:55,292 : WARN  : KNIME-Worker-3-Column Filter 3:39 :  : Node : GroupBy : 3:40 : No aggregation column defined
+2024-10-21 20:49:55,293 : WARN  : KNIME-Worker-3-Column Filter 3:39 :  : Node : GroupBy : 3:40 : All columns selected as group by column
+2024-10-21 20:53:41,508 : WARN  : comm-pool-thread-8 :  : Node : GroupBy : 3:41 : No aggregation column defined
+2024-10-21 20:54:20,219 : WARN  : comm-pool-thread-8 :  : Node : GroupBy : 3:41 : No aggregation column defined
+2024-10-21 20:54:20,220 : WARN  : comm-pool-thread-8 :  : Node : GroupBy : 3:41 : Group column 'ProductName' not in spec.
+2024-10-21 20:54:28,648 : WARN  : comm-pool-thread-9 :  : Node : GroupBy : 3:41 : No aggregation column defined
+2024-10-21 20:54:28,649 : WARN  : comm-pool-thread-9 :  : Node : GroupBy : 3:41 : Group column 'ProductName' not in spec.
+2024-10-21 20:54:42,521 : WARN  : main :  : Node : GroupBy : 3:41 : No aggregation column defined
+2024-10-21 20:54:44,971 : WARN  : KNIME-Worker-5-Column Filter 3:42 :  : Node : GroupBy : 3:41 : No aggregation column defined
+2024-10-21 20:58:41,954 : WARN  : comm-pool-thread-11 :  : Node : GroupBy : 3:10 : No aggregation column defined
+2024-10-21 20:58:41,954 : WARN  : comm-pool-thread-11 :  : Node : GroupBy : 3:40 : No aggregation column defined
+2024-10-21 20:58:41,954 : WARN  : comm-pool-thread-11 :  : Node : GroupBy : 3:40 : All columns selected as group by column
+2024-10-21 20:58:41,955 : WARN  : comm-pool-thread-11 :  : Node : GroupBy : 3:41 : No aggregation column defined
+2024-10-21 20:58:44,295 : WARN  : KNIME-Worker-6-CSV Reader 3:1 :  : Node : GroupBy : 3:10 : No aggregation column defined
+2024-10-21 20:58:44,296 : WARN  : KNIME-Worker-6-CSV Reader 3:1 :  : Node : GroupBy : 3:40 : No aggregation column defined
+2024-10-21 20:58:44,296 : WARN  : KNIME-Worker-6-CSV Reader 3:1 :  : Node : GroupBy : 3:40 : All columns selected as group by column
+2024-10-21 20:58:44,296 : WARN  : KNIME-Worker-6-CSV Reader 3:1 :  : Node : GroupBy : 3:41 : No aggregation column defined
+2024-10-21 20:58:44,304 : WARN  : KNIME-Worker-7-Column Filter 3:42 :  : Node : GroupBy : 3:41 : No aggregation column defined
+2024-10-21 21:03:23,528 : WARN  : comm-pool-thread-12 :  : Node : GroupBy : 3:45 : No grouping column included. Aggregate complete table.
+2024-10-21 21:03:23,528 : WARN  : comm-pool-thread-12 :  : Node : GroupBy : 3:45 : No aggregation column defined
+2024-10-21 21:03:23,528 : WARN  : comm-pool-thread-12 :  : Node : GroupBy : 3:45 : Please select at least one group or aggregation column
+2024-10-21 21:03:53,624 : WARN  : comm-pool-thread-14 :  : Node : Column to XML : 3:46 : Cannot create column "XMMML111" since it is already in the input.
+2024-10-21 21:04:21,699 : WARN  : comm-pool-thread-12 :  : Node : Column to XML : 3:46 : Cannot create column "XMMML111" since it is already in the input.
+2024-10-21 21:07:13,139 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:37 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:38, 3:39, 3:40, 3:41, 3:42, 3:43, 3:44, 3:45, 3:46] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 21:07:13,139 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:37 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:38, 3:39, 3:40, 3:41, 3:42, 3:43, 3:44, 3:45, 3:46] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-21 21:14:27,420 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:47 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:38, 3:39, 3:40, 3:41, 3:42, 3:43, 3:44, 3:45, 3:46] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 21:14:27,420 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:47 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:38, 3:39, 3:40, 3:41, 3:42, 3:43, 3:44, 3:45, 3:46] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-21 21:15:26,103 : WARN  : comm-pool-thread-17 :  : Node : XML Row Combiner : 3:47 : Auto guessing: using column "XML".
+2024-10-21 21:37:05,196 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:49 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:38, 3:39, 3:40, 3:41, 3:42, 3:43, 3:44, 3:45, 3:46, 3:47, 3:48] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 21:37:05,196 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:49 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:38, 3:39, 3:40, 3:41, 3:42, 3:43, 3:44, 3:45, 3:46, 3:47, 3:48] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
