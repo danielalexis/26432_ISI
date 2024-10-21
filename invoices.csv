@@ -1,0 +1,26 @@
+InvoiceID,InvoiceDate,CustomerID,CustomerName,ProductID,ProductName,Quantity,UnitPrice,TotalPrice,PaymentMethod
+INV001,2024-01-15,CUST001,John Doe,PRD001,Laptop,1,1200,1200,Credit Card
+INV002,2024-01-16,CUST002,Jane Smith,PRD002,Smartphone,2,800,1600,PayPal
+INV003,2024-01-17,CUST003,David Johnson,PRD003,Headphones,5,150,750,Bank Transfer
+INV004,2024-01-18,CUST004,Sarah Brown,PRD004,Tablet,3,500,1500,Credit Card
+INV005,2024-01-19,CUST005,Emily Davis,PRD001,Laptop,1,1200,1200,Cash
+INV006,2024-01-20,CUST002,Michael Wilson,PRD002,Smartphone,1,800,800,PayPal
+INV007,2024-01-21,CUST007,Daniel Martinez,PRD005,Smartwatch,4,250,1000,Credit Card
+INV008,2024-01-22,CUST008,Olivia Garcia,PRD003,Headphones,2,150,300,Bank Transfer
+INV009,2024-01-23,CUST009,Lucas Rodriguez,PRD004,Tablet,1,500,500,Cash
+INV010,2024-01-24,CUST001,John Doe,PRD005,Smartwatch,2,250,500,Credit Card
+INV011,2024-01-25,CUST011,William Lee,PRD006,Desktop Computer,1,1500,1500,PayPal
+INV012,2024-01-26,CUST012,Isabella Hall,PRD007,Monitor,3,300,900,Credit Card
+INV013,2024-01-27,CUST013,Ethan Wright,PRD008,Keyboard,10,50,500,Cash
+INV014,2024-01-28,CUST014,Charlotte Green,PRD009,Mouse,8,30,240,PayPal
+INV015,2024-01-29,CUST004,Liam Young,PRD010,Printer,2,250,500,Bank Transfer
+INV016,2024-01-30,CUST016,Harper Adams,PRD011,Webcam,5,100,500,Credit Card
+INV017,2024-01-31,CUST017,James Scott,PRD006,Desktop Computer,2,1500,3000,PayPal
+INV018,2024-02-01,CUST018,Avery Moore,PRD007,Monitor,1,300,300,Cash
+INV019,2024-02-02,CUST019,Sophia White,PRD012,External Hard Drive,4,120,480,Credit Card
+INV020,2024-02-03,CUST020,Henry Harris,PRD008,Keyboard,6,50,300,PayPal
+INV021,2024-02-04,CUST010,Ella Thompson,PRD009,Mouse,5,30,150,Cash
+INV022,2024-02-05,CUST022,Benjamin King,PRD010,Printer,1,250,250,Bank Transfer
+INV023,2024-02-06,CUST023,Mia Martinez,PRD011,Webcam,2,100,200,Credit Card
+INV024,2024-02-07,CUST011,Oliver Perez,PRD012,External Hard Drive,3,120,360,PayPal
+INV025,2024-02-08,CUST016,Evelyn Roberts,PRD001,Laptop,1,1200,1200,Cash
