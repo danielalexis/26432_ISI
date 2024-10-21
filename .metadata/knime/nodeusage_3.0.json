@@ -1,0 +1,89 @@
+{
+    "version": "5.3.2.v202409051351",
+    "created": "2024-10-21 17:12",
+    "nodestats": {
+        "nodes": [
+            {
+                "id": "org.knime.base.node.io.filehandling.csv.reader.CSVTableReaderNodeFactory",
+                "nodename": "CSV Reader",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 0,
+                "successor": "org.knime.base.node.preproc.unpivot2.Unpivot2NodeFactory",
+                "successornodename": "Unpivot"
+            },
+            {
+                "id": "org.knime.xml.node.rcombine.XMLRowCombinerNodeFactory",
+                "nodename": "XML Row Combiner",
+                "nrexecs": 0,
+                "nrfails": 7,
+                "exectime": 20,
+                "nrcreated": 1,
+                "successor": "org.knime.xml.node.filehandling.writer.XMLWriterNodeFactory2",
+                "successornodename": "XML Writer"
+            },
+            {
+                "id": "org.knime.xml.node.columntoxml.ColumnToXMLNodeFactory",
+                "nodename": "Column to XML",
+                "nrexecs": 2,
+                "nrfails": 9,
+                "exectime": 96,
+                "nrcreated": 0,
+                "successor": "org.knime.xml.node.rcombine.XMLRowCombinerNodeFactory",
+                "successornodename": "XML Row Combiner"
+            },
+            {
+                "id": "org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory",
+                "nodename": "Column Filter",
+                "nrexecs": 2,
+                "nrfails": 0,
+                "exectime": 1,
+                "nrcreated": 0,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.groupby.GroupByNodeFactory",
+                "nodename": "GroupBy",
+                "nrexecs": 7,
+                "nrfails": 0,
+                "exectime": 208,
+                "nrcreated": 0,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.unpivot2.Unpivot2NodeFactory",
+                "nodename": "Unpivot",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 5,
+                "nrcreated": 1,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            }
+        ],
+        "metaNodes": {
+        },
+        "wrappedNodes": {
+        },
+        "createdVia": {
+            "WEB_UI": 2
+        }
+    },
+    "uptime": 1883737,
+    "workflowsOpened": 1,
+    "remoteWorkflowsOpened": 0,
+    "columnarStorageWorkflowsOpened": 0,
+    "workflowsImported": 0,
+    "workflowsExported": 0,
+    "webUIPerspectiveSwitches": 0,
+    "javaUIPerspectiveSwitches": 0,
+    "lastUsedPerspective": "starter",
+    "launches": 1,
+    "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
+    "timeSinceLastStart": 1883737,
+    "crashes": 0,
+    "properlyShutDown": false
+}

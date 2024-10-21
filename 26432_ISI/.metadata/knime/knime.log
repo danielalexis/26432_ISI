@@ -1,0 +1,461 @@
+2024-10-21 17:47:51,927 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:47:51,961 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:47:51,962 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error trying to fetch workflow group content 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:47:51,962 : ERROR : main :  : KnimeBrowserView :  :  : Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 14)
+2024-10-21 17:47:56,201 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:47:56,231 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:47:56,231 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error trying to fetch workflow group content 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:47:56,232 : ERROR : main :  : KnimeBrowserView :  :  : Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 14)
+2024-10-21 17:47:58,397 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: The item with id 'root' is not a workflow group (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:47:58,397 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: The item with id 'root' is not a workflow group (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-21 17:48:08,231 : ERROR : main :  : KnimeBrowserView :  :  : TypeError: Cannot read properties of undefined (reading 'length') (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 14)
+2024-10-21 17:48:10,166 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:48:10,202 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:48:10,202 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error trying to fetch workflow group content 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:48:10,204 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-21 17:48:10,712 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:48:10,746 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:48:10,746 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error trying to fetch workflow group content 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:48:10,748 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-21 17:48:10,857 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:48:10,892 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:48:10,892 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error trying to fetch workflow group content 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:48:10,893 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-21 17:48:10,996 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:48:11,032 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:48:11,032 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error trying to fetch workflow group content 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:48:11,033 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-21 17:48:11,141 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:48:11,178 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:48:11,178 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error trying to fetch workflow group content 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:48:11,178 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-21 17:48:11,272 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:48:11,301 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:48:11,301 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error trying to fetch workflow group content 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:48:11,301 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-21 17:48:20,322 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:48:20,322 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c There was an error creating the workflow 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:48:20,911 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:48:20,912 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c There was an error creating the workflow 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:48:21,076 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:48:21,076 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c There was an error creating the workflow 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:48:21,217 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:48:21,217 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c There was an error creating the workflow 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:48:21,357 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:48:21,358 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c There was an error creating the workflow 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:48:21,482 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 17:48:21,482 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c There was an error creating the workflow 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 18:07:53,323 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 18:07:53,358 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 18:07:53,359 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error trying to fetch workflow group content 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 18:07:53,359 : ERROR : main :  : KnimeBrowserView :  :  : Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 14)
+2024-10-21 18:08:01,163 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 18:08:01,198 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 18:08:01,199 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error trying to fetch workflow group content 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 18:08:01,199 : ERROR : main :  : KnimeBrowserView :  :  : Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 14)
+2024-10-21 18:08:02,808 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 18:08:02,837 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 18:08:02,837 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error trying to fetch workflow group content 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 18:08:02,837 : ERROR : main :  : KnimeBrowserView :  :  : Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 14)
+2024-10-21 18:08:15,899 : ERROR : main :  : KnimeBrowserView :  :  : TypeError: Cannot read properties of undefined (reading 'length') (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 14)
+2024-10-21 18:08:25,271 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Server event handler error 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: dom element hasn't been set yet (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 18:09:07,684 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 18:09:07,764 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 18:09:07,764 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error trying to fetch workflow group content 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 18:09:07,764 : ERROR : main :  : KnimeBrowserView :  :  : Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 14)
+2024-10-21 18:10:25,199 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 18:10:25,278 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 18:10:25,279 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error trying to fetch workflow group content 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 18:10:25,279 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-21 18:10:25,713 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 18:10:25,806 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 18:10:25,807 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error trying to fetch workflow group content 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 18:10:25,807 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-21 18:10:26,025 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 18:10:26,103 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 18:10:26,103 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error trying to fetch workflow group content 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 18:10:26,104 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-21 18:10:26,320 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 18:10:26,398 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 18:10:26,398 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error trying to fetch workflow group content 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 18:10:26,398 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: Problem fetching space items (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-21 18:11:18,404 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: The item with id 'root' is not a workflow group (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-21 18:11:18,404 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: The item with id 'root' is not a workflow group (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
