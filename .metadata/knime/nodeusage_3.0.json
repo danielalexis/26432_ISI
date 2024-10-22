@@ -4,48 +4,58 @@
     "nodestats": {
         "nodes": [
             {
-                "id": "org.knime.xml.node.rcombine.XMLRowCombinerNodeFactory",
-                "nodename": "XML Row Combiner",
-                "nrexecs": 7,
-                "nrfails": 0,
-                "exectime": 126,
-                "nrcreated": 4,
-                "successor": "org.knime.json.node.fromxml.XMLToJSONNodeFactory",
-                "successornodename": "XML to JSON"
-            },
-            {
                 "id": "org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory",
                 "nodename": "Column Filter",
-                "nrexecs": 18,
+                "nrexecs": 12,
                 "nrfails": 0,
-                "exectime": 13,
-                "nrcreated": 0,
-                "successor": "org.knime.xml.node.rcombine.XMLRowCombinerNodeFactory",
-                "successornodename": "XML Row Combiner"
-            },
-            {
-                "id": "org.knime.base.node.io.filehandling.csv.reader.CSVTableReaderNodeFactory",
-                "nodename": "CSV Reader",
-                "nrexecs": 1,
-                "nrfails": 0,
-                "exectime": 161,
-                "nrcreated": 0,
-                "successor": "org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory",
-                "successornodename": "Column Filter"
+                "exectime": 110,
+                "nrcreated": 1,
+                "successor": "org.knime.base.node.preproc.groupby.GroupByNodeFactory",
+                "successornodename": "GroupBy"
             },
             {
                 "id": "org.knime.base.node.preproc.groupby.GroupByNodeFactory",
                 "nodename": "GroupBy",
-                "nrexecs": 4,
+                "nrexecs": 14,
                 "nrfails": 0,
-                "exectime": 208,
-                "nrcreated": 2,
-                "successor": "org.knime.base.node.preproc.joiner3.Joiner3NodeFactory",
-                "successornodename": "Joiner"
+                "exectime": 323,
+                "nrcreated": 1,
+                "successor": "org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory",
+                "successornodename": "Column Filter"
             },
             {
-                "id": "org.knime.database.node.manipulation.groupby.DBGroupByNodeFactory",
-                "nodename": "DB GroupBy",
+                "id": "org.knime.base.node.preproc.filter.row.RowFilterNodeFactory",
+                "nodename": "Row Filter (deprecated)",
+                "nrexecs": 3,
+                "nrfails": 0,
+                "exectime": 9,
+                "nrcreated": 5,
+                "successor": "org.knime.time.node.convert.stringtodatetime.StringToDateTimeNodeFactory",
+                "successornodename": "String to Date&Time"
+            },
+            {
+                "id": "org.knime.base.node.io.filehandling.csv.reader.CSVTableReaderNodeFactory",
+                "nodename": "CSV Reader",
+                "nrexecs": 2,
+                "nrfails": 3,
+                "exectime": 282,
+                "nrcreated": 0,
+                "successor": "org.knime.base.node.preproc.filter.row3.RowFilterNodeFactory",
+                "successornodename": "Row Filter"
+            },
+            {
+                "id": "org.knime.base.node.preproc.filter.row3.RowFilterNodeFactory",
+                "nodename": "Row Filter",
+                "nrexecs": 2,
+                "nrfails": 0,
+                "exectime": 58,
+                "nrcreated": 2,
+                "successor": "org.knime.base.node.preproc.groupby.GroupByNodeFactory",
+                "successornodename": "GroupBy"
+            },
+            {
+                "id": "org.knime.base.expressions.node.ExpressionNodeFactory",
+                "nodename": "Expression",
                 "nrexecs": 0,
                 "nrfails": 0,
                 "exectime": 0,
@@ -54,42 +64,72 @@
                 "successornodename": "n/a"
             },
             {
+                "id": "org.knime.time.node.extract.datetime.ExtractDateTimeFieldsNodeFactory2",
+                "nodename": "Date&Time Part Extractor",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 1,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.time.node.convert.stringtodatetime.StringToDateTimeNodeFactory",
+                "nodename": "String to Date&Time",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 4,
+                "nrcreated": 1,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
                 "id": "org.knime.base.node.preproc.joiner3.Joiner3NodeFactory",
                 "nodename": "Joiner",
-                "nrexecs": 10,
+                "nrexecs": 13,
                 "nrfails": 0,
-                "exectime": 71,
-                "nrcreated": 1,
-                "successor": "org.knime.xml.node.columntoxml.ColumnToXMLNodeFactory",
-                "successornodename": "Column to XML"
+                "exectime": 66,
+                "nrcreated": 0,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.base.views.node.piechart.PieChartNodeFactory",
+                "nodename": "Pie Chart",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 13,
+                "nrcreated": 0,
+                "successor": "n/a",
+                "successornodename": "n/a"
             },
             {
                 "id": "org.knime.xml.node.columntoxml.ColumnToXMLNodeFactory",
                 "nodename": "Column to XML",
-                "nrexecs": 27,
+                "nrexecs": 9,
                 "nrfails": 0,
-                "exectime": 225,
+                "exectime": 171,
                 "nrcreated": 0,
-                "successor": "org.knime.xml.node.ccombine2.XMLColumnCombinerNodeFactory",
-                "successornodename": "XML Column Combiner"
+                "successor": "n/a",
+                "successornodename": "n/a"
             },
             {
                 "id": "org.knime.xml.node.ccombine2.XMLColumnCombinerNodeFactory",
                 "nodename": "XML Column Combiner",
-                "nrexecs": 12,
+                "nrexecs": 3,
                 "nrfails": 0,
-                "exectime": 102,
+                "exectime": 48,
                 "nrcreated": 0,
-                "successor": "org.knime.xml.node.rcombine.XMLRowCombinerNodeFactory",
-                "successornodename": "XML Row Combiner"
+                "successor": "n/a",
+                "successornodename": "n/a"
             },
             {
-                "id": "org.knime.json.node.fromxml.XMLToJSONNodeFactory",
-                "nodename": "XML to JSON",
-                "nrexecs": 2,
+                "id": "org.knime.xml.node.rcombine.XMLRowCombinerNodeFactory",
+                "nodename": "XML Row Combiner",
+                "nrexecs": 1,
                 "nrfails": 0,
-                "exectime": 41,
-                "nrcreated": 1,
+                "exectime": 25,
+                "nrcreated": 0,
                 "successor": "n/a",
                 "successornodename": "n/a"
             }
@@ -99,10 +139,10 @@
         "wrappedNodes": {
         },
         "createdVia": {
-            "WEB_UI": 9
+            "WEB_UI": 12
         }
     },
-    "uptime": 4788690,
+    "uptime": 4072680,
     "workflowsOpened": 1,
     "remoteWorkflowsOpened": 0,
     "columnarStorageWorkflowsOpened": 0,
@@ -111,9 +151,9 @@
     "webUIPerspectiveSwitches": 0,
     "javaUIPerspectiveSwitches": 0,
     "lastUsedPerspective": "none",
-    "launches": 2,
+    "launches": 3,
     "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
-    "timeSinceLastStart": 4358233,
+    "timeSinceLastStart": 2148356,
     "crashes": 0,
     "properlyShutDown": false
 }

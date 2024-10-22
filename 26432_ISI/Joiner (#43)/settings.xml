@@ -25,7 +25,9 @@
                 <entry key="1" type="xstring" value="Sum(TotalPrice)"/>
             </config>
             <config key="excluded_names">
-                <entry key="array-size" type="xint" value="0"/>
+                <entry key="array-size" type="xint" value="2"/>
+                <entry key="0" type="xstring" value="InvoiceID"/>
+                <entry key="1" type="xstring" value="ProductID"/>
             </config>
             <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
             <config key="name_pattern">
@@ -41,15 +43,15 @@
         <config key="rightColumnSelectionConfig">
             <entry key="filter-type" type="xstring" value="STANDARD"/>
             <config key="included_names">
-                <entry key="array-size" type="xint" value="3"/>
-                <entry key="0" type="xstring" value="Quantity"/>
-                <entry key="1" type="xstring" value="UnitPrice"/>
-                <entry key="2" type="xstring" value="TotalPrice"/>
-            </config>
-            <config key="excluded_names">
-                <entry key="array-size" type="xint" value="2"/>
+                <entry key="array-size" type="xint" value="5"/>
                 <entry key="0" type="xstring" value="InvoiceID"/>
                 <entry key="1" type="xstring" value="ProductID"/>
+                <entry key="2" type="xstring" value="Quantity"/>
+                <entry key="3" type="xstring" value="UnitPrice"/>
+                <entry key="4" type="xstring" value="TotalPrice"/>
+            </config>
+            <config key="excluded_names">
+                <entry key="array-size" type="xint" value="0"/>
             </config>
             <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
             <config key="name_pattern">
@@ -133,6 +135,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="0456c214-2af4-4fdd-905b-c6003d496b27"/>
+        <entry key="file_store_id" type="xstring" value="7ef4e987-0eef-4e62-8946-e40283aaa843"/>
     </config>
 </config>

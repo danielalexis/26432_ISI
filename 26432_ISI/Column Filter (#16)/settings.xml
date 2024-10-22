@@ -9,12 +9,15 @@
         <config key="column-filter">
             <entry key="filter-type" type="xstring" value="STANDARD"/>
             <config key="included_names">
-                <entry key="array-size" type="xint" value="2"/>
+                <entry key="array-size" type="xint" value="5"/>
                 <entry key="0" type="xstring" value="InvoiceID"/>
                 <entry key="1" type="xstring" value="InvoiceDate"/>
+                <entry key="2" type="xstring" value="PaymentMethod"/>
+                <entry key="3" type="xstring" value="DueDate"/>
+                <entry key="4" type="xstring" value="PaymentDate"/>
             </config>
             <config key="excluded_names">
-                <entry key="array-size" type="xint" value="8"/>
+                <entry key="array-size" type="xint" value="7"/>
                 <entry key="0" type="xstring" value="CustomerID"/>
                 <entry key="1" type="xstring" value="CustomerName"/>
                 <entry key="2" type="xstring" value="ProductID"/>
@@ -22,7 +25,6 @@
                 <entry key="4" type="xstring" value="Quantity"/>
                 <entry key="5" type="xstring" value="UnitPrice"/>
                 <entry key="6" type="xstring" value="TotalPrice"/>
-                <entry key="7" type="xstring" value="PaymentMethod"/>
             </config>
             <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
             <config key="name_pattern">
