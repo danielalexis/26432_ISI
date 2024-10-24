@@ -6,7 +6,7 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="outputFile" type="xstring" value="C:\Users\Alexis\report.pdf"/>
+        <entry key="outputFile" type="xstring" value="report-sum-client.pdf"/>
         <entry key="existingFileHandlingMode" type="xstring" value="OVERWRITE"/>
         <entry key="selectedBrowser" type="xstring" value="CEF"/>
         <entry key="timeoutSeconds" type="xint" value="30"/>
@@ -31,6 +31,6 @@
     <config key="ports"/>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="8535ca3c-4c32-44ce-b657-ccc5a8e4e476"/>
+        <entry key="file_store_id" type="xstring" value="b1f0fb63-ffa3-4f4b-8bed-60d63ae6b205"/>
     </config>
 </config>
