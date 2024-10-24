@@ -1,2 +1,4 @@
+Dividas de Clientes
+Totais por cliente
 Produtos mais vendidos
 Workflow finished

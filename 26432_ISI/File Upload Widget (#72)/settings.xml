@@ -33,7 +33,7 @@
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="file-upload-input"/>
             <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="C:\Users\Alexis\Desktop\Aulas\ISI\26432_ISI\tmp\report-productsuauck3thkubu.pdf"/>
+            <entry key="value" type="xstring" value="C:\Users\Alexis\Desktop\Aulas\ISI\26432_ISI\tmp\report-productsgba938afykt5.pdf"/>
         </config>
         <config key="Variable_5">
             <entry key="type" type="xstring" value="variable"/>
@@ -42,13 +42,13 @@
             <entry key="location_present" type="xboolean" value="true"/>
             <entry key="file_system_type" type="xstring" value="CUSTOM_URL"/>
             <entry key="file_system_specifier" type="xstring" value="1000"/>
-            <entry key="path" type="xstring" value="knime://knime.workflow/tmp/report-productsuauck3thkubu.pdf"/>
+            <entry key="path" type="xstring" value="knime://knime.workflow/tmp/report-productsgba938afykt5.pdf"/>
         </config>
         <config key="Variable_6">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="file-upload-input (URL)"/>
             <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="knime://knime.workflow/tmp/report-productsuauck3thkubu.pdf"/>
+            <entry key="value" type="xstring" value="knime://knime.workflow/tmp/report-productsgba938afykt5.pdf"/>
         </config>
         <config key="Variable_7">
             <entry key="type" type="xstring" value="variable"/>
@@ -110,6 +110,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="f2c10bbe-3914-48e6-81a5-336c93044987"/>
+        <entry key="file_store_id" type="xstring" value="71dd3a93-26d9-4495-a552-5860da6ecc0b"/>
     </config>
 </config>

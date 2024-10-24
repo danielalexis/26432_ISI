@@ -11,21 +11,21 @@
         <entry key="useAuthentication" type="xboolean" value="true"/>
         <entry key="useCredentials" type="xboolean" value="false"/>
         <entry key="credentialsId" type="xstring" value=""/>
-        <entry key="smtpUser" type="xstring" value="declan.frami99@ethereal.email"/>
-        <entry key="smtpPasswordWeaklyEncrypted" type="xpassword" value="02EgAAAGMq_QxveL1vZ0EBj7ykyw_WNf2UpBAkZcFjdcfWtHPevH8="/>
+        <entry key="smtpUser" type="xstring" value="hortense.konopelski@ethereal.email"/>
+        <entry key="smtpPasswordWeaklyEncrypted" type="xpassword" value="02EgAAAGMq_QxveL1vZ0EBj4uGuwnbP6uUkSIOdKJUPN8dC2-aOuk="/>
         <entry key="connectionSecurity" type="xstring" value="STARTTLS"/>
-        <entry key="emailFormat" type="xstring" value="Html"/>
+        <entry key="emailFormat" type="xstring" value="Text"/>
         <entry key="emailPriority" type="xstring" value="Normal"/>
-        <entry key="from" type="xstring" value="declan.frami99@ethereal.email"/>
+        <entry key="from" type="xstring" value="hortense.konopelski@ethereal.email"/>
         <entry key="to" type="xstring" value="teste@teste.com"/>
         <entry key="cc" type="xstring" value=""/>
         <entry key="bcc" type="xstring" value=""/>
         <entry key="replyTo" type="xstring" value=""/>
-        <entry key="subject" type="xstring" value="Produtos mais vendidos"/>
+        <entry key="subject" type="xstring" value="Totais por cliente"/>
         <entry key="text" type="xstring" value="Olá,%%00010Em anexo encontra-se o report com os totais por cliente!%%00010%%00010Email gerado automaticamente."/>
         <config key="attachedURLs">
             <entry key="array-size" type="xint" value="1"/>
-            <entry key="0" type="xstring" value="file:/C:/Users/Daniel%20Pereira/AppData/Local/Programs/KNIME/report-debt.pdf"/>
+            <entry key="0" type="xstring" value="knime://knime.workflow/tmp/report-debt88zhjo0a5ssm.pdf"/>
         </config>
         <entry key="smtpConnectionTimeout" type="xint" value="22000"/>
         <entry key="smtpReadTimeout" type="xint" value="30000"/>
@@ -58,6 +58,6 @@
     <config key="ports"/>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="830299fd-b514-448f-ab06-cff701a91d97"/>
+        <entry key="file_store_id" type="xstring" value="8a6b8f77-4377-4908-bcff-9c49598d98a0"/>
     </config>
 </config>

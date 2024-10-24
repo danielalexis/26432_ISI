@@ -11,12 +11,12 @@
         <entry key="useAuthentication" type="xboolean" value="true"/>
         <entry key="useCredentials" type="xboolean" value="false"/>
         <entry key="credentialsId" type="xstring" value=""/>
-        <entry key="smtpUser" type="xstring" value="declan.frami99@ethereal.email"/>
-        <entry key="smtpPasswordWeaklyEncrypted" type="xpassword" value="02EgAAAGMq_QxveL1vZ0EBj7ykyw_WNf2UpBAkZcFjdcfWtHPevH8="/>
+        <entry key="smtpUser" type="xstring" value="hortense.konopelski@ethereal.email"/>
+        <entry key="smtpPasswordWeaklyEncrypted" type="xpassword" value="02EgAAAGMq_QxveL1vZ0EBj4uGuwnbP6uUkSIOdKJUPN8dC2-aOuk="/>
         <entry key="connectionSecurity" type="xstring" value="STARTTLS"/>
-        <entry key="emailFormat" type="xstring" value="Html"/>
+        <entry key="emailFormat" type="xstring" value="Text"/>
         <entry key="emailPriority" type="xstring" value="Normal"/>
-        <entry key="from" type="xstring" value="declan.frami99@ethereal.email"/>
+        <entry key="from" type="xstring" value="hortense.konopelski@ethereal.email"/>
         <entry key="to" type="xstring" value="teste@teste.com"/>
         <entry key="cc" type="xstring" value=""/>
         <entry key="bcc" type="xstring" value=""/>
@@ -25,7 +25,7 @@
         <entry key="text" type="xstring" value="Olá,%%00010Em anexo encontra-se os produtos mais vendidos de acordo com as faturas dadas!%%00010%%00010Email gerado automaticamente."/>
         <config key="attachedURLs">
             <entry key="array-size" type="xint" value="1"/>
-            <entry key="0" type="xstring" value="knime://knime.workflow/tmp/report-productsny3xdghonfme.pdf"/>
+            <entry key="0" type="xstring" value="knime://knime.workflow/tmp/report-productsgba938afykt5.pdf"/>
         </config>
         <entry key="smtpConnectionTimeout" type="xint" value="22000"/>
         <entry key="smtpReadTimeout" type="xint" value="30000"/>
@@ -58,6 +58,6 @@
     <config key="ports"/>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="426aed9a-c757-4e81-9407-95308e1e323c"/>
+        <entry key="file_store_id" type="xstring" value="f33d2dbc-57c8-44bb-93ff-50efd9592efb"/>
     </config>
 </config>
