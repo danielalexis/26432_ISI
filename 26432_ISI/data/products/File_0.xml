@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Products>
+    <Product>
+        <ProductID>PRD008</ProductID>
+        <ProductName>Keyboard</ProductName>
+        <Quantity>16</Quantity>
+    </Product>
+    <Product>
+        <ProductID>PRD009</ProductID>
+        <ProductName>Mouse</ProductName>
+        <Quantity>13</Quantity>
+    </Product>
+    <Product>
+        <ProductID>PRD003</ProductID>
+        <ProductName>Headphones</ProductName>
+        <Quantity>7</Quantity>
+    </Product>
+    <Product>
+        <ProductID>PRD011</ProductID>
+        <ProductName>Webcam</ProductName>
+        <Quantity>7</Quantity>
+    </Product>
+    <Product>
+        <ProductID>PRD012</ProductID>
+        <ProductName>External Hard Drive</ProductName>
+        <Quantity>7</Quantity>
+    </Product>
+    <Product>
+        <ProductID>PRD005</ProductID>
+        <ProductName>Smartwatch</ProductName>
+        <Quantity>6</Quantity>
+    </Product>
+    <Product>
+        <ProductID>PRD002</ProductID>
+        <ProductName>Smartphone</ProductName>
+        <Quantity>5</Quantity>
+    </Product>
+    <Product>
+        <ProductID>PRD004</ProductID>
+        <ProductName>Tablet</ProductName>
+        <Quantity>4</Quantity>
+    </Product>
+    <Product>
+        <ProductID>PRD007</ProductID>
+        <ProductName>Monitor</ProductName>
+        <Quantity>4</Quantity>
+    </Product>
+    <Product>
+        <ProductID>PRD001</ProductID>
+        <ProductName>Laptop</ProductName>
+        <Quantity>3</Quantity>
+    </Product>
+    <Product>
+        <ProductID>PRD006</ProductID>
+        <ProductName>Desktop Computer</ProductName>
+        <Quantity>3</Quantity>
+    </Product>
+    <Product>
+        <ProductID>PRD010</ProductID>
+        <ProductName>Printer</ProductName>
+        <Quantity>3</Quantity>
+    </Product>
+</Products>

@@ -1002,3 +1002,2251 @@ Caused by: java.nio.file.FileAlreadyExistsException: test/File_0.xml
       padding: 2px 0.5em;
       Error: No such node ID: 3:49 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:38, 3:39, 3:40, 3:41, 3:42, 3:43, 3:44, 3:45, 3:46, 3:47, 3:48] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
 2024-10-21 21:37:05,196 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:49 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:38, 3:39, 3:40, 3:41, 3:42, 3:43, 3:44, 3:45, 3:46, 3:47, 3:48] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-22 19:08:46,983 : WARN  : ModalContext :  : Node : GroupBy : 3:10 : No aggregation column defined
+2024-10-22 19:08:46,991 : WARN  : ModalContext :  : Node : GroupBy : 3:10 : No aggregation column defined
+2024-10-22 19:08:47,151 : WARN  : ModalContext :  : Node : GroupBy : 3:40 : All columns selected as group by column
+2024-10-22 19:08:47,153 : WARN  : ModalContext :  : Node : GroupBy : 3:40 : No aggregation column defined
+2024-10-22 19:08:47,154 : WARN  : ModalContext :  : Node : GroupBy : 3:40 : All columns selected as group by column
+2024-10-22 19:08:48,152 : WARN  : ModalContext :  : Node : XML Row Combiner : 3:47 : Auto guessing: using column "XML".
+2024-10-22 19:11:54,181 : WARN  : KNIME-Worker-1-Column Filter 3:11 :  : Node : GroupBy : 3:10 : No aggregation column defined
+2024-10-22 19:13:22,855 : WARN  : WebSocket@390944491-1068 :  : Node : Row Filter (deprecated) : 3:48 : No row filter specified
+2024-10-22 19:13:23,154 : WARN  : WebSocket@390944491-1070 :  : Node : GroupBy : 3:49 : No grouping column included. Aggregate complete table.
+2024-10-22 19:13:23,155 : WARN  : WebSocket@390944491-1070 :  : Node : GroupBy : 3:49 : No aggregation column defined
+2024-10-22 19:13:23,155 : WARN  : WebSocket@390944491-1070 :  : Node : GroupBy : 3:49 : Please select at least one group or aggregation column
+2024-10-22 19:13:29,519 : WARN  : KNIME-Worker-3-Row Filter (deprecated) 3:48 :  : Node : Row Filter (deprecated) : 3:48 : Node created an empty data table.
+2024-10-22 19:13:29,521 : WARN  : KNIME-Worker-4-GroupBy 3:49 :  : Node : GroupBy : 3:49 : Empty input table found
+2024-10-22 19:13:29,524 : WARN  : KNIME-Worker-3-Column Filter 3:50 :  : Node : Column Filter : 3:50 : Node created an empty data table.
+2024-10-22 19:19:59,971 : WARN  : comm-pool-thread-7 :  : Node : GroupBy : 3:10 : No aggregation column defined
+2024-10-22 19:19:59,972 : WARN  : comm-pool-thread-7 :  : Node : GroupBy : 3:40 : No aggregation column defined
+2024-10-22 19:19:59,972 : WARN  : comm-pool-thread-7 :  : Node : GroupBy : 3:40 : All columns selected as group by column
+2024-10-22 19:19:59,972 : WARN  : comm-pool-thread-7 :  : Node : GroupBy : 3:41 : No aggregation column defined
+2024-10-22 19:20:01,336 : ERROR : KNIME-Worker-5-CSV Reader 3:1 :  : Node : CSV Reader : 3:1 : Execute failed: Table schema has changed in invoices.csv:
+Expected 10 columns but got 12
+Please reconfigure the node or consider enabling the 'Use new schema' option.
+
+java.lang.IllegalStateException: Table schema has changed in invoices.csv:
+Expected 10 columns but got 12
+Please reconfigure the node or consider enabling the 'Use new schema' option.
+
+	at org.knime.filehandling.core.node.table.reader.DefaultMultiTableReadFactory.validateIndividualSpecs(DefaultMultiTableReadFactory.java:237)
+	at org.knime.filehandling.core.node.table.reader.DefaultMultiTableReadFactory.createFromConfig(DefaultMultiTableReadFactory.java:214)
+	at org.knime.filehandling.core.node.table.reader.MultiTableReader.createMultiRead(MultiTableReader.java:128)
+	at org.knime.filehandling.core.node.table.reader.MultiTableReader.getMultiRead(MultiTableReader.java:209)
+	at org.knime.filehandling.core.node.table.reader.MultiTableReader.readTable(MultiTableReader.java:167)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:160)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: java.lang.IllegalStateException: Expected 10 columns but got 12
+	at org.knime.filehandling.core.node.table.reader.util.MultiTableUtils.checkEquals(MultiTableUtils.java:201)
+	at org.knime.base.node.io.filehandling.csv.reader.api.CSVTableReader.checkSpecs(CSVTableReader.java:241)
+	at org.knime.base.node.io.filehandling.csv.reader.api.CSVTableReader.checkSpecs(CSVTableReader.java:1)
+	at org.knime.filehandling.core.node.table.reader.DefaultMultiTableReadFactory.validateIndividualSpecs(DefaultMultiTableReadFactory.java:229)
+	... 18 more
+2024-10-22 19:20:06,464 : ERROR : KNIME-Worker-6-CSV Reader 3:1 :  : Node : CSV Reader : 3:1 : Execute failed: Table schema has changed in invoices.csv:
+Expected 10 columns but got 12
+Please reconfigure the node or consider enabling the 'Use new schema' option.
+
+java.lang.IllegalStateException: Table schema has changed in invoices.csv:
+Expected 10 columns but got 12
+Please reconfigure the node or consider enabling the 'Use new schema' option.
+
+	at org.knime.filehandling.core.node.table.reader.DefaultMultiTableReadFactory.validateIndividualSpecs(DefaultMultiTableReadFactory.java:237)
+	at org.knime.filehandling.core.node.table.reader.DefaultMultiTableReadFactory.createFromConfig(DefaultMultiTableReadFactory.java:214)
+	at org.knime.filehandling.core.node.table.reader.MultiTableReader.createMultiRead(MultiTableReader.java:128)
+	at org.knime.filehandling.core.node.table.reader.MultiTableReader.getMultiRead(MultiTableReader.java:209)
+	at org.knime.filehandling.core.node.table.reader.MultiTableReader.readTable(MultiTableReader.java:167)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:160)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: java.lang.IllegalStateException: Expected 10 columns but got 12
+	at org.knime.filehandling.core.node.table.reader.util.MultiTableUtils.checkEquals(MultiTableUtils.java:201)
+	at org.knime.base.node.io.filehandling.csv.reader.api.CSVTableReader.checkSpecs(CSVTableReader.java:241)
+	at org.knime.base.node.io.filehandling.csv.reader.api.CSVTableReader.checkSpecs(CSVTableReader.java:1)
+	at org.knime.filehandling.core.node.table.reader.DefaultMultiTableReadFactory.validateIndividualSpecs(DefaultMultiTableReadFactory.java:229)
+	... 18 more
+2024-10-22 19:20:07,192 : ERROR : KNIME-Worker-5-CSV Reader 3:1 :  : Node : CSV Reader : 3:1 : Execute failed: Table schema has changed in invoices.csv:
+Expected 10 columns but got 12
+Please reconfigure the node or consider enabling the 'Use new schema' option.
+
+java.lang.IllegalStateException: Table schema has changed in invoices.csv:
+Expected 10 columns but got 12
+Please reconfigure the node or consider enabling the 'Use new schema' option.
+
+	at org.knime.filehandling.core.node.table.reader.DefaultMultiTableReadFactory.validateIndividualSpecs(DefaultMultiTableReadFactory.java:237)
+	at org.knime.filehandling.core.node.table.reader.DefaultMultiTableReadFactory.createFromConfig(DefaultMultiTableReadFactory.java:214)
+	at org.knime.filehandling.core.node.table.reader.MultiTableReader.createMultiRead(MultiTableReader.java:128)
+	at org.knime.filehandling.core.node.table.reader.MultiTableReader.getMultiRead(MultiTableReader.java:209)
+	at org.knime.filehandling.core.node.table.reader.MultiTableReader.readTable(MultiTableReader.java:167)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:160)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: java.lang.IllegalStateException: Expected 10 columns but got 12
+	at org.knime.filehandling.core.node.table.reader.util.MultiTableUtils.checkEquals(MultiTableUtils.java:201)
+	at org.knime.base.node.io.filehandling.csv.reader.api.CSVTableReader.checkSpecs(CSVTableReader.java:241)
+	at org.knime.base.node.io.filehandling.csv.reader.api.CSVTableReader.checkSpecs(CSVTableReader.java:1)
+	at org.knime.filehandling.core.node.table.reader.DefaultMultiTableReadFactory.validateIndividualSpecs(DefaultMultiTableReadFactory.java:229)
+	... 18 more
+2024-10-22 19:20:21,046 : WARN  : main :  : Node : GroupBy : 3:10 : No aggregation column defined
+2024-10-22 19:20:21,046 : WARN  : main :  : Node : GroupBy : 3:40 : No aggregation column defined
+2024-10-22 19:20:21,046 : WARN  : main :  : Node : GroupBy : 3:40 : All columns selected as group by column
+2024-10-22 19:20:21,047 : WARN  : main :  : Node : GroupBy : 3:41 : No aggregation column defined
+2024-10-22 19:20:21,808 : WARN  : main :  : Node : GroupBy : 3:10 : No aggregation column defined
+2024-10-22 19:20:21,809 : WARN  : main :  : Node : GroupBy : 3:40 : No aggregation column defined
+2024-10-22 19:20:21,810 : WARN  : main :  : Node : GroupBy : 3:40 : All columns selected as group by column
+2024-10-22 19:20:21,810 : WARN  : main :  : Node : GroupBy : 3:41 : No aggregation column defined
+2024-10-22 19:20:22,696 : WARN  : KNIME-Worker-6-CSV Reader 3:1 :  : Node : GroupBy : 3:10 : No aggregation column defined
+2024-10-22 19:20:22,697 : WARN  : KNIME-Worker-6-CSV Reader 3:1 :  : Node : GroupBy : 3:40 : No aggregation column defined
+2024-10-22 19:20:22,697 : WARN  : KNIME-Worker-6-CSV Reader 3:1 :  : Node : GroupBy : 3:40 : All columns selected as group by column
+2024-10-22 19:20:22,697 : WARN  : KNIME-Worker-6-CSV Reader 3:1 :  : Node : GroupBy : 3:41 : No aggregation column defined
+2024-10-22 19:20:25,253 : WARN  : KNIME-Worker-5-Row Filter (deprecated) 3:48 :  : Node : Row Filter (deprecated) : 3:48 : Node created an empty data table.
+2024-10-22 19:20:25,255 : WARN  : KNIME-Worker-6-GroupBy 3:49 :  : Node : GroupBy : 3:49 : Empty input table found
+2024-10-22 19:20:25,257 : WARN  : KNIME-Worker-5-Column Filter 3:50 :  : Node : Column Filter : 3:50 : Node created an empty data table.
+2024-10-22 19:20:33,612 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:48 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:38, 3:39, 3:40, 3:41, 3:42, 3:43, 3:44, 3:45, 3:46, 3:47, 3:49, 3:50] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-22 19:20:33,613 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:48 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:38, 3:39, 3:40, 3:41, 3:42, 3:43, 3:44, 3:45, 3:46, 3:47, 3:49, 3:50] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-22 19:20:40,769 : WARN  : comm-pool-thread-7 :  : Node : Row Filter : 3:51 : At least one filter criterion is needed.
+2024-10-22 19:20:53,645 : WARN  : KNIME-Worker-6-Row Filter 3:51 :  : Node : Row Filter : 3:51 : Node created an empty data table.
+2024-10-22 19:22:11,155 : WARN  : comm-pool-thread-9 :  : Node : GroupBy : 3:10 : No aggregation column defined
+2024-10-22 19:22:11,156 : WARN  : comm-pool-thread-9 :  : Node : GroupBy : 3:40 : No aggregation column defined
+2024-10-22 19:22:11,156 : WARN  : comm-pool-thread-9 :  : Node : GroupBy : 3:40 : All columns selected as group by column
+2024-10-22 19:22:11,156 : WARN  : comm-pool-thread-9 :  : Node : GroupBy : 3:41 : No aggregation column defined
+2024-10-22 19:22:11,993 : WARN  : KNIME-Worker-5-CSV Reader 3:1 :  : Node : GroupBy : 3:10 : No aggregation column defined
+2024-10-22 19:22:11,994 : WARN  : KNIME-Worker-5-CSV Reader 3:1 :  : Node : GroupBy : 3:40 : No aggregation column defined
+2024-10-22 19:22:11,994 : WARN  : KNIME-Worker-5-CSV Reader 3:1 :  : Node : GroupBy : 3:40 : All columns selected as group by column
+2024-10-22 19:22:11,994 : WARN  : KNIME-Worker-5-CSV Reader 3:1 :  : Node : GroupBy : 3:41 : No aggregation column defined
+2024-10-22 19:28:13,485 : WARN  : WebSocket@754930576-1739 :  : Node : Row Filter (deprecated) : 3:52 : No row filter specified
+2024-10-22 19:28:13,794 : WARN  : WebSocket@754930576-1736 :  : Node : Row Filter (deprecated) : 3:53 : No row filter specified
+2024-10-22 19:30:27,656 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:53 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:38, 3:39, 3:40, 3:41, 3:42, 3:43, 3:44, 3:45, 3:46, 3:47, 3:49, 3:50, 3:51, 3:52] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-22 19:30:27,657 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:53 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:38, 3:39, 3:40, 3:41, 3:42, 3:43, 3:44, 3:45, 3:46, 3:47, 3:49, 3:50, 3:51, 3:52] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-22 19:30:28,177 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:52 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:38, 3:39, 3:40, 3:41, 3:42, 3:43, 3:44, 3:45, 3:46, 3:47, 3:49, 3:50, 3:51] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-22 19:30:28,177 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:52 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:38, 3:39, 3:40, 3:41, 3:42, 3:43, 3:44, 3:45, 3:46, 3:47, 3:49, 3:50, 3:51] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-22 19:30:44,892 : WARN  : WebSocket@134722-1917 :  : Node : Row Filter (deprecated) : 3:52 : No row filter specified
+2024-10-22 19:30:45,197 : WARN  : WebSocket@134722-1918 :  : Node : Row Filter (deprecated) : 3:53 : No row filter specified
+2024-10-22 19:31:12,837 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:53 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:38, 3:39, 3:40, 3:41, 3:42, 3:43, 3:44, 3:45, 3:46, 3:47, 3:49, 3:50, 3:51, 3:52] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-22 19:31:12,838 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:53 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:38, 3:39, 3:40, 3:41, 3:42, 3:43, 3:44, 3:45, 3:46, 3:47, 3:49, 3:50, 3:51, 3:52] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-22 19:31:23,823 : WARN  : WebSocket@855602494-1946 :  : Node : Expression : 3:53 : The expression node has not yet been configured. Enter an expression.
+2024-10-22 19:31:24,014 : WARN  : WebSocket@855602494-1945 :  : Node : Expression : 3:53 : Typing error in expression at position 0: No function with name parse_date. Did you mean parse_int?
+2024-10-22 19:31:24,016 : WARN  : WebSocket@855602494-1945 :  : Node : Expression : 3:53 : Typing error in expression at position 0: No function with name parse_date. Did you mean parse_int?
+2024-10-22 19:31:39,608 : WARN  : comm-pool-thread-21 :  : Node : Expression : 3:53 : Typing error in expression at position 0: No function with name parse_date. Did you mean parse_int?
+2024-10-22 19:31:53,788 : WARN  : comm-pool-thread-21 :  : Node : Date&Time Part Extractor : 3:53 : No Date&Time compatible column selected.
+2024-10-22 19:31:59,209 : ERROR : comm-pool-thread-23 :  : DefaultNodeService :  :  : java.io.IOException: Invalid node settings: No empty fields allowed. Please remove to continue.
+2024-10-22 19:32:07,508 : WARN  : comm-pool-thread-23 :  : Node : String to Date&Time : 3:53 : Node must be configured.
+2024-10-22 19:32:11,914 : WARN  : KNIME-Worker-8-Row Filter (deprecated) 3:52 :  : Node : String to Date&Time : 3:53 : Node must be configured.
+2024-10-22 19:32:26,692 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:52 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:38, 3:39, 3:40, 3:41, 3:42, 3:43, 3:44, 3:45, 3:46, 3:47, 3:49, 3:50, 3:51, 3:53] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-22 19:32:26,702 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:52 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:38, 3:39, 3:40, 3:41, 3:42, 3:43, 3:44, 3:45, 3:46, 3:47, 3:49, 3:50, 3:51, 3:53] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-22 19:32:32,083 : WARN  : comm-pool-thread-23 :  : Node : Row Filter : 3:54 : At least one filter criterion is needed.
+2024-10-22 19:33:18,559 : WARN  : KNIME-Worker-7-Column Filter 3:39 :  : Node : GroupBy : 3:40 : No aggregation column defined
+2024-10-22 19:33:18,560 : WARN  : KNIME-Worker-7-Column Filter 3:39 :  : Node : GroupBy : 3:40 : All columns selected as group by column
+2024-10-22 19:33:37,176 : WARN  : KNIME-Worker-7-Column Filter 3:11 :  : Node : GroupBy : 3:10 : No aggregation column defined
+2024-10-22 19:33:43,231 : WARN  : KNIME-Worker-7-Column Filter 3:42 :  : Node : GroupBy : 3:41 : No aggregation column defined
+2024-10-22 19:34:48,856 : WARN  : comm-pool-thread-23 :  : Node : GroupBy : 3:45 : Group column 'InvoiceID' not in spec.
+2024-10-22 19:34:49,477 : WARN  : KNIME-Worker-7-Joiner 3:43 :  : Node : GroupBy : 3:45 : Group column 'InvoiceID' not in spec.
+2024-10-22 19:35:06,277 : WARN  : KNIME-Worker-8-Joiner 3:43 :  : Node : Joiner : 3:43 : Node created an empty data table.
+2024-10-22 19:35:13,125 : WARN  : KNIME-Worker-7-Joiner 3:43 :  : Node : Joiner : 3:43 : Node created an empty data table.
+2024-10-22 19:37:26,548 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:47 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:38, 3:39, 3:40, 3:41, 3:42, 3:43, 3:44, 3:45, 3:46, 3:49, 3:50, 3:51, 3:53, 3:54] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-22 19:37:26,548 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:47 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:38, 3:39, 3:40, 3:41, 3:42, 3:43, 3:44, 3:45, 3:46, 3:49, 3:50, 3:51, 3:53, 3:54] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-23 19:47:55,524 : WARN  : ModalContext :  : Node : Row Filter : 3:54 : At least one filter criterion is needed.
+2024-10-23 19:47:55,528 : WARN  : ModalContext :  : Node : Row Filter : 3:54 : At least one filter criterion is needed.
+2024-10-23 19:51:54,974 : WARN  : comm-pool-thread-3 :  : Node : Send Email : 3:55 : No mail settings have been set. Set them in the node configuration.
+2024-10-23 19:54:27,697 : WARN  : comm-pool-thread-5 :  : Node : XML Writer : 3:56 : Auto-guessed column 'XML' as XML input column
+2024-10-23 19:54:27,698 : WARN  : comm-pool-thread-5 :  : Node : XML Writer : 3:56 : Please specify a folder
+2024-10-23 19:54:57,588 : ERROR : KNIME-Worker-1-XML Writer 3:56 :  : Node : XML Writer : 3:56 : Execute failed: Illegal char <<> at index 38: C:\Users\Alexis\Desktop\Aulas\ISI\ola\<?xml version="1.0" encoding="UTF-8"?>
+<Customers>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD001<\Id>
+                <Name>Laptop<\Name>
+                <Quantity>1<\Quantity>
+                <UnitPrice>1200<\UnitPrice>
+            <\Product>
+            <Date>2024-01-15<\Date>
+            <Id>INV001<\Id>
+            <TotalPrice>2800<\TotalPrice>
+        <\Invoice>
+        <Id>CUST001<\Id>
+        <Name>John Doe<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD002<\Id>
+                <Name>Smartphone<\Name>
+                <Quantity>2<\Quantity>
+                <UnitPrice>800<\UnitPrice>
+            <\Product>
+            <Date>2024-01-15<\Date>
+            <Id>INV001<\Id>
+            <TotalPrice>2800<\TotalPrice>
+        <\Invoice>
+        <Id>CUST001<\Id>
+        <Name>John Doe<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD002<\Id>
+                <Name>Smartphone<\Name>
+                <Quantity>2<\Quantity>
+                <UnitPrice>800<\UnitPrice>
+            <\Product>
+            <Date>2024-01-16<\Date>
+            <Id>INV002<\Id>
+            <TotalPrice>1600<\TotalPrice>
+        <\Invoice>
+        <Id>CUST002<\Id>
+        <Name>Jane Smith<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD003<\Id>
+                <Name>Headphones<\Name>
+                <Quantity>5<\Quantity>
+                <UnitPrice>150<\UnitPrice>
+            <\Product>
+            <Date>2024-01-17<\Date>
+            <Id>INV003<\Id>
+            <TotalPrice>750<\TotalPrice>
+        <\Invoice>
+        <Id>CUST003<\Id>
+        <Name>David Johnson<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD004<\Id>
+                <Name>Tablet<\Name>
+                <Quantity>3<\Quantity>
+                <UnitPrice>500<\UnitPrice>
+            <\Product>
+            <Date>2024-01-18<\Date>
+            <Id>INV004<\Id>
+            <TotalPrice>1500<\TotalPrice>
+        <\Invoice>
+        <Id>CUST004<\Id>
+        <Name>Sarah Brown<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD001<\Id>
+                <Name>Laptop<\Name>
+                <Quantity>1<\Quantity>
+                <UnitPrice>1200<\UnitPrice>
+            <\Product>
+            <Date>2024-01-19<\Date>
+            <Id>INV005<\Id>
+            <TotalPrice>1200<\TotalPrice>
+        <\Invoice>
+        <Id>CUST005<\Id>
+        <Name>Emily Davis<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD002<\Id>
+                <Name>Smartphone<\Name>
+                <Quantity>1<\Quantity>
+                <UnitPrice>800<\UnitPrice>
+            <\Product>
+            <Date>2024-01-20<\Date>
+            <Id>INV006<\Id>
+            <TotalPrice>800<\TotalPrice>
+        <\Invoice>
+        <Id>CUST002<\Id>
+        <Name>Jane Smith<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD005<\Id>
+                <Name>Smartwatch<\Name>
+                <Quantity>4<\Quantity>
+                <UnitPrice>250<\UnitPrice>
+            <\Product>
+            <Date>2024-01-21<\Date>
+            <Id>INV007<\Id>
+            <TotalPrice>1000<\TotalPrice>
+        <\Invoice>
+        <Id>CUST007<\Id>
+        <Name>Daniel Martinez<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD003<\Id>
+                <Name>Headphones<\Name>
+                <Quantity>2<\Quantity>
+                <UnitPrice>150<\UnitPrice>
+            <\Product>
+            <Date>2024-01-22<\Date>
+            <Id>INV008<\Id>
+            <TotalPrice>300<\TotalPrice>
+        <\Invoice>
+        <Id>CUST008<\Id>
+        <Name>Olivia Garcia<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD004<\Id>
+                <Name>Tablet<\Name>
+                <Quantity>1<\Quantity>
+                <UnitPrice>500<\UnitPrice>
+            <\Product>
+            <Date>2024-01-23<\Date>
+            <Id>INV009<\Id>
+            <TotalPrice>500<\TotalPrice>
+        <\Invoice>
+        <Id>CUST009<\Id>
+        <Name>Lucas Rodriguez<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD005<\Id>
+                <Name>Smartwatch<\Name>
+                <Quantity>2<\Quantity>
+                <UnitPrice>250<\UnitPrice>
+            <\Product>
+            <Date>2024-01-24<\Date>
+            <Id>INV010<\Id>
+            <TotalPrice>500<\TotalPrice>
+        <\Invoice>
+        <Id>CUST001<\Id>
+        <Name>John Doe<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD006<\Id>
+                <Name>Desktop Computer<\Name>
+                <Quantity>1<\Quantity>
+                <UnitPrice>1500<\UnitPrice>
+            <\Product>
+            <Date>2024-01-25<\Date>
+            <Id>INV011<\Id>
+            <TotalPrice>1500<\TotalPrice>
+        <\Invoice>
+        <Id>CUST011<\Id>
+        <Name>William Lee<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD007<\Id>
+                <Name>Monitor<\Name>
+                <Quantity>3<\Quantity>
+                <UnitPrice>300<\UnitPrice>
+            <\Product>
+            <Date>2024-01-26<\Date>
+            <Id>INV012<\Id>
+            <TotalPrice>900<\TotalPrice>
+        <\Invoice>
+        <Id>CUST012<\Id>
+        <Name>Isabella Hall<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD008<\Id>
+                <Name>Keyboard<\Name>
+                <Quantity>10<\Quantity>
+                <UnitPrice>50<\UnitPrice>
+            <\Product>
+            <Date>2024-01-27<\Date>
+            <Id>INV013<\Id>
+            <TotalPrice>500<\TotalPrice>
+        <\Invoice>
+        <Id>CUST013<\Id>
+        <Name>Ethan Wright<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD009<\Id>
+                <Name>Mouse<\Name>
+                <Quantity>8<\Quantity>
+                <UnitPrice>30<\UnitPrice>
+            <\Product>
+            <Date>2024-01-28<\Date>
+            <Id>INV014<\Id>
+            <TotalPrice>240<\TotalPrice>
+        <\Invoice>
+        <Id>CUST014<\Id>
+        <Name>Charlotte Green<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD010<\Id>
+                <Name>Printer<\Name>
+                <Quantity>2<\Quantity>
+                <UnitPrice>250<\UnitPrice>
+            <\Product>
+            <Date>2024-01-29<\Date>
+            <Id>INV015<\Id>
+            <TotalPrice>500<\TotalPrice>
+        <\Invoice>
+        <Id>CUST004<\Id>
+        <Name>Sarah Brown<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD011<\Id>
+                <Name>Webcam<\Name>
+                <Quantity>5<\Quantity>
+                <UnitPrice>100<\UnitPrice>
+            <\Product>
+            <Date>2024-01-30<\Date>
+            <Id>INV016<\Id>
+            <TotalPrice>500<\TotalPrice>
+        <\Invoice>
+        <Id>CUST016<\Id>
+        <Name>Harper Adams<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD006<\Id>
+                <Name>Desktop Computer<\Name>
+                <Quantity>2<\Quantity>
+                <UnitPrice>1500<\UnitPrice>
+            <\Product>
+            <Date>2024-01-31<\Date>
+            <Id>INV017<\Id>
+            <TotalPrice>3000<\TotalPrice>
+        <\Invoice>
+        <Id>CUST017<\Id>
+        <Name>James Scott<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD007<\Id>
+                <Name>Monitor<\Name>
+                <Quantity>1<\Quantity>
+                <UnitPrice>300<\UnitPrice>
+            <\Product>
+            <Date>2024-02-01<\Date>
+            <Id>INV018<\Id>
+            <TotalPrice>300<\TotalPrice>
+        <\Invoice>
+        <Id>CUST018<\Id>
+        <Name>Avery Moore<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD012<\Id>
+                <Name>External Hard Drive<\Name>
+                <Quantity>4<\Quantity>
+                <UnitPrice>120<\UnitPrice>
+            <\Product>
+            <Date>2024-02-02<\Date>
+            <Id>INV019<\Id>
+            <TotalPrice>480<\TotalPrice>
+        <\Invoice>
+        <Id>CUST019<\Id>
+        <Name>Sophia White<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD008<\Id>
+                <Name>Keyboard<\Name>
+                <Quantity>6<\Quantity>
+                <UnitPrice>50<\UnitPrice>
+            <\Product>
+            <Date>2024-02-03<\Date>
+            <Id>INV020<\Id>
+            <TotalPrice>300<\TotalPrice>
+        <\Invoice>
+        <Id>CUST020<\Id>
+        <Name>Henry Harris<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD009<\Id>
+                <Name>Mouse<\Name>
+                <Quantity>5<\Quantity>
+                <UnitPrice>30<\UnitPrice>
+            <\Product>
+            <Date>2024-02-04<\Date>
+            <Id>INV021<\Id>
+            <TotalPrice>150<\TotalPrice>
+        <\Invoice>
+        <Id>CUST010<\Id>
+        <Name>Ella Thompson<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD010<\Id>
+                <Name>Printer<\Name>
+                <Quantity>1<\Quantity>
+                <UnitPrice>250<\UnitPrice>
+            <\Product>
+            <Date>2024-02-05<\Date>
+            <Id>INV022<\Id>
+            <TotalPrice>250<\TotalPrice>
+        <\Invoice>
+        <Id>CUST022<\Id>
+        <Name>Benjamin King<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD011<\Id>
+                <Name>Webcam<\Name>
+                <Quantity>2<\Quantity>
+                <UnitPrice>100<\UnitPrice>
+            <\Product>
+            <Date>2024-02-06<\Date>
+            <Id>INV023<\Id>
+            <TotalPrice>200<\TotalPrice>
+        <\Invoice>
+        <Id>CUST023<\Id>
+        <Name>Mia Martinez<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD012<\Id>
+                <Name>External Hard Drive<\Name>
+                <Quantity>3<\Quantity>
+                <UnitPrice>120<\UnitPrice>
+            <\Product>
+            <Date>2024-02-07<\Date>
+            <Id>INV024<\Id>
+            <TotalPrice>360<\TotalPrice>
+        <\Invoice>
+        <Id>CUST011<\Id>
+        <Name>William Lee<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD001<\Id>
+                <Name>Laptop<\Name>
+                <Quantity>1<\Quantity>
+                <UnitPrice>1200<\UnitPrice>
+            <\Product>
+            <Date>2024-02-08<\Date>
+            <Id>INV025<\Id>
+            <TotalPrice>1200<\TotalPrice>
+        <\Invoice>
+        <Id>CUST016<\Id>
+        <Name>Harper Adams<\Name>
+    <\Customer>
+<\Customers>.xml
+java.nio.file.InvalidPathException: Illegal char <<> at index 38: C:\Users\Alexis\Desktop\Aulas\ISI\ola\<?xml version="1.0" encoding="UTF-8"?>
+<Customers>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD001<\Id>
+                <Name>Laptop<\Name>
+                <Quantity>1<\Quantity>
+                <UnitPrice>1200<\UnitPrice>
+            <\Product>
+            <Date>2024-01-15<\Date>
+            <Id>INV001<\Id>
+            <TotalPrice>2800<\TotalPrice>
+        <\Invoice>
+        <Id>CUST001<\Id>
+        <Name>John Doe<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD002<\Id>
+                <Name>Smartphone<\Name>
+                <Quantity>2<\Quantity>
+                <UnitPrice>800<\UnitPrice>
+            <\Product>
+            <Date>2024-01-15<\Date>
+            <Id>INV001<\Id>
+            <TotalPrice>2800<\TotalPrice>
+        <\Invoice>
+        <Id>CUST001<\Id>
+        <Name>John Doe<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD002<\Id>
+                <Name>Smartphone<\Name>
+                <Quantity>2<\Quantity>
+                <UnitPrice>800<\UnitPrice>
+            <\Product>
+            <Date>2024-01-16<\Date>
+            <Id>INV002<\Id>
+            <TotalPrice>1600<\TotalPrice>
+        <\Invoice>
+        <Id>CUST002<\Id>
+        <Name>Jane Smith<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD003<\Id>
+                <Name>Headphones<\Name>
+                <Quantity>5<\Quantity>
+                <UnitPrice>150<\UnitPrice>
+            <\Product>
+            <Date>2024-01-17<\Date>
+            <Id>INV003<\Id>
+            <TotalPrice>750<\TotalPrice>
+        <\Invoice>
+        <Id>CUST003<\Id>
+        <Name>David Johnson<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD004<\Id>
+                <Name>Tablet<\Name>
+                <Quantity>3<\Quantity>
+                <UnitPrice>500<\UnitPrice>
+            <\Product>
+            <Date>2024-01-18<\Date>
+            <Id>INV004<\Id>
+            <TotalPrice>1500<\TotalPrice>
+        <\Invoice>
+        <Id>CUST004<\Id>
+        <Name>Sarah Brown<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD001<\Id>
+                <Name>Laptop<\Name>
+                <Quantity>1<\Quantity>
+                <UnitPrice>1200<\UnitPrice>
+            <\Product>
+            <Date>2024-01-19<\Date>
+            <Id>INV005<\Id>
+            <TotalPrice>1200<\TotalPrice>
+        <\Invoice>
+        <Id>CUST005<\Id>
+        <Name>Emily Davis<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD002<\Id>
+                <Name>Smartphone<\Name>
+                <Quantity>1<\Quantity>
+                <UnitPrice>800<\UnitPrice>
+            <\Product>
+            <Date>2024-01-20<\Date>
+            <Id>INV006<\Id>
+            <TotalPrice>800<\TotalPrice>
+        <\Invoice>
+        <Id>CUST002<\Id>
+        <Name>Jane Smith<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD005<\Id>
+                <Name>Smartwatch<\Name>
+                <Quantity>4<\Quantity>
+                <UnitPrice>250<\UnitPrice>
+            <\Product>
+            <Date>2024-01-21<\Date>
+            <Id>INV007<\Id>
+            <TotalPrice>1000<\TotalPrice>
+        <\Invoice>
+        <Id>CUST007<\Id>
+        <Name>Daniel Martinez<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD003<\Id>
+                <Name>Headphones<\Name>
+                <Quantity>2<\Quantity>
+                <UnitPrice>150<\UnitPrice>
+            <\Product>
+            <Date>2024-01-22<\Date>
+            <Id>INV008<\Id>
+            <TotalPrice>300<\TotalPrice>
+        <\Invoice>
+        <Id>CUST008<\Id>
+        <Name>Olivia Garcia<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD004<\Id>
+                <Name>Tablet<\Name>
+                <Quantity>1<\Quantity>
+                <UnitPrice>500<\UnitPrice>
+            <\Product>
+            <Date>2024-01-23<\Date>
+            <Id>INV009<\Id>
+            <TotalPrice>500<\TotalPrice>
+        <\Invoice>
+        <Id>CUST009<\Id>
+        <Name>Lucas Rodriguez<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD005<\Id>
+                <Name>Smartwatch<\Name>
+                <Quantity>2<\Quantity>
+                <UnitPrice>250<\UnitPrice>
+            <\Product>
+            <Date>2024-01-24<\Date>
+            <Id>INV010<\Id>
+            <TotalPrice>500<\TotalPrice>
+        <\Invoice>
+        <Id>CUST001<\Id>
+        <Name>John Doe<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD006<\Id>
+                <Name>Desktop Computer<\Name>
+                <Quantity>1<\Quantity>
+                <UnitPrice>1500<\UnitPrice>
+            <\Product>
+            <Date>2024-01-25<\Date>
+            <Id>INV011<\Id>
+            <TotalPrice>1500<\TotalPrice>
+        <\Invoice>
+        <Id>CUST011<\Id>
+        <Name>William Lee<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD007<\Id>
+                <Name>Monitor<\Name>
+                <Quantity>3<\Quantity>
+                <UnitPrice>300<\UnitPrice>
+            <\Product>
+            <Date>2024-01-26<\Date>
+            <Id>INV012<\Id>
+            <TotalPrice>900<\TotalPrice>
+        <\Invoice>
+        <Id>CUST012<\Id>
+        <Name>Isabella Hall<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD008<\Id>
+                <Name>Keyboard<\Name>
+                <Quantity>10<\Quantity>
+                <UnitPrice>50<\UnitPrice>
+            <\Product>
+            <Date>2024-01-27<\Date>
+            <Id>INV013<\Id>
+            <TotalPrice>500<\TotalPrice>
+        <\Invoice>
+        <Id>CUST013<\Id>
+        <Name>Ethan Wright<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD009<\Id>
+                <Name>Mouse<\Name>
+                <Quantity>8<\Quantity>
+                <UnitPrice>30<\UnitPrice>
+            <\Product>
+            <Date>2024-01-28<\Date>
+            <Id>INV014<\Id>
+            <TotalPrice>240<\TotalPrice>
+        <\Invoice>
+        <Id>CUST014<\Id>
+        <Name>Charlotte Green<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD010<\Id>
+                <Name>Printer<\Name>
+                <Quantity>2<\Quantity>
+                <UnitPrice>250<\UnitPrice>
+            <\Product>
+            <Date>2024-01-29<\Date>
+            <Id>INV015<\Id>
+            <TotalPrice>500<\TotalPrice>
+        <\Invoice>
+        <Id>CUST004<\Id>
+        <Name>Sarah Brown<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD011<\Id>
+                <Name>Webcam<\Name>
+                <Quantity>5<\Quantity>
+                <UnitPrice>100<\UnitPrice>
+            <\Product>
+            <Date>2024-01-30<\Date>
+            <Id>INV016<\Id>
+            <TotalPrice>500<\TotalPrice>
+        <\Invoice>
+        <Id>CUST016<\Id>
+        <Name>Harper Adams<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD006<\Id>
+                <Name>Desktop Computer<\Name>
+                <Quantity>2<\Quantity>
+                <UnitPrice>1500<\UnitPrice>
+            <\Product>
+            <Date>2024-01-31<\Date>
+            <Id>INV017<\Id>
+            <TotalPrice>3000<\TotalPrice>
+        <\Invoice>
+        <Id>CUST017<\Id>
+        <Name>James Scott<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD007<\Id>
+                <Name>Monitor<\Name>
+                <Quantity>1<\Quantity>
+                <UnitPrice>300<\UnitPrice>
+            <\Product>
+            <Date>2024-02-01<\Date>
+            <Id>INV018<\Id>
+            <TotalPrice>300<\TotalPrice>
+        <\Invoice>
+        <Id>CUST018<\Id>
+        <Name>Avery Moore<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD012<\Id>
+                <Name>External Hard Drive<\Name>
+                <Quantity>4<\Quantity>
+                <UnitPrice>120<\UnitPrice>
+            <\Product>
+            <Date>2024-02-02<\Date>
+            <Id>INV019<\Id>
+            <TotalPrice>480<\TotalPrice>
+        <\Invoice>
+        <Id>CUST019<\Id>
+        <Name>Sophia White<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD008<\Id>
+                <Name>Keyboard<\Name>
+                <Quantity>6<\Quantity>
+                <UnitPrice>50<\UnitPrice>
+            <\Product>
+            <Date>2024-02-03<\Date>
+            <Id>INV020<\Id>
+            <TotalPrice>300<\TotalPrice>
+        <\Invoice>
+        <Id>CUST020<\Id>
+        <Name>Henry Harris<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD009<\Id>
+                <Name>Mouse<\Name>
+                <Quantity>5<\Quantity>
+                <UnitPrice>30<\UnitPrice>
+            <\Product>
+            <Date>2024-02-04<\Date>
+            <Id>INV021<\Id>
+            <TotalPrice>150<\TotalPrice>
+        <\Invoice>
+        <Id>CUST010<\Id>
+        <Name>Ella Thompson<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD010<\Id>
+                <Name>Printer<\Name>
+                <Quantity>1<\Quantity>
+                <UnitPrice>250<\UnitPrice>
+            <\Product>
+            <Date>2024-02-05<\Date>
+            <Id>INV022<\Id>
+            <TotalPrice>250<\TotalPrice>
+        <\Invoice>
+        <Id>CUST022<\Id>
+        <Name>Benjamin King<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD011<\Id>
+                <Name>Webcam<\Name>
+                <Quantity>2<\Quantity>
+                <UnitPrice>100<\UnitPrice>
+            <\Product>
+            <Date>2024-02-06<\Date>
+            <Id>INV023<\Id>
+            <TotalPrice>200<\TotalPrice>
+        <\Invoice>
+        <Id>CUST023<\Id>
+        <Name>Mia Martinez<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD012<\Id>
+                <Name>External Hard Drive<\Name>
+                <Quantity>3<\Quantity>
+                <UnitPrice>120<\UnitPrice>
+            <\Product>
+            <Date>2024-02-07<\Date>
+            <Id>INV024<\Id>
+            <TotalPrice>360<\TotalPrice>
+        <\Invoice>
+        <Id>CUST011<\Id>
+        <Name>William Lee<\Name>
+    <\Customer>
+    <Customer>
+        <Invoice>
+            <Product>
+                <Id>PRD001<\Id>
+                <Name>Laptop<\Name>
+                <Quantity>1<\Quantity>
+                <UnitPrice>1200<\UnitPrice>
+            <\Product>
+            <Date>2024-02-08<\Date>
+            <Id>INV025<\Id>
+            <TotalPrice>1200<\TotalPrice>
+        <\Invoice>
+        <Id>CUST016<\Id>
+        <Name>Harper Adams<\Name>
+    <\Customer>
+<\Customers>.xml
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at java.base/java.nio.file.Path.of(Unknown Source)
+	at java.base/java.nio.file.Paths.get(Unknown Source)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystem.toLocalPath(LocalWorkflowAwareFileSystem.java:183)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystem.existsWithAccessibilityCheck(LocalWorkflowAwareFileSystem.java:341)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystemProvider.exists(LocalWorkflowAwareFileSystemProvider.java:159)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystemProvider.exists(LocalWorkflowAwareFileSystemProvider.java:1)
+	at org.knime.filehandling.core.connections.base.BaseFileSystemProvider.existsCached(BaseFileSystemProvider.java:656)
+	at org.knime.filehandling.core.connections.base.BaseFileSystemProvider.readAttributes(BaseFileSystemProvider.java:733)
+	at java.base/java.nio.file.Files.readAttributes(Unknown Source)
+	at org.knime.filehandling.core.connections.FSFiles.exists(FSFiles.java:302)
+	at org.knime.filehandling.core.node.table.writer.AbstractMultiTableWriterCellFactory.write(AbstractMultiTableWriterCellFactory.java:142)
+	at org.knime.filehandling.core.node.table.writer.AbstractMultiTableWriterCellFactory.getCells(AbstractMultiTableWriterCellFactory.java:133)
+	at org.knime.core.data.container.CellFactory.getCells(CellFactory.java:98)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewCellsForRow(RearrangeColumnsTable.java:565)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewColsSynchronously(RearrangeColumnsTable.java:484)
+	at org.knime.core.data.container.RearrangeColumnsTable.create(RearrangeColumnsTable.java:412)
+	at org.knime.core.data.container.BufferedTableBackend.rearrange(BufferedTableBackend.java:212)
+	at org.knime.core.node.ExecutionContext.createColumnRearrangeTable(ExecutionContext.java:467)
+	at org.knime.filehandling.core.node.table.writer.AbstractMultiTableWriterNodeModel.execute(AbstractMultiTableWriterNodeModel.java:323)
+	at org.knime.filehandling.core.node.table.writer.AbstractMultiTableWriterNodeModel.execute(AbstractMultiTableWriterNodeModel.java:1)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-10-23 19:55:02,458 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:56 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:38, 3:39, 3:40, 3:41, 3:42, 3:43, 3:44, 3:45, 3:46, 3:49, 3:50, 3:51, 3:53, 3:54, 3:55] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-23 19:55:02,458 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:56 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:38, 3:39, 3:40, 3:41, 3:42, 3:43, 3:44, 3:45, 3:46, 3:49, 3:50, 3:51, 3:53, 3:54, 3:55] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-23 19:57:10,052 : WARN  : comm-pool-thread-7 :  : Node : Send Email : 3:56 : No mail settings have been set. Set them in the node configuration.
+2024-10-23 19:58:08,263 : ERROR : KNIME-Worker-3-Send Email 3:56 :  : Node : Send Email : 3:56 : Execute failed: This error occurred while communicating with the SMTP server: "com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email , 587; timeout 2000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email ".
+org.knime.core.node.InvalidSettingsException: This error occurred while communicating with the SMTP server: "com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email , 587; timeout 2000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email ".
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:701)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:680)
+	at org.knime.base.node.util.sendmail.SendMailNodeModel.execute(SendMailNodeModel.java:95)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email , 587; timeout 2000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email 
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2210)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:722)
+	at javax.mail.Service.connect(Service.java:342)
+	at javax.mail.Service.connect(Service.java:222)
+	at javax.mail.Service.connect(Service.java:243)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.sendMail(SendMailConfiguration.java:882)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:696)
+	... 15 more
+Caused by: java.net.UnknownHostException:  smtp.ethereal.email 
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:333)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:214)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2160)
+	... 21 more
+2024-10-23 19:59:02,101 : ERROR : KNIME-Worker-3-Send Email 3:56 :  : Node : Send Email : 3:56 : Execute failed: This error occurred while communicating with the SMTP server: "com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email , 587; timeout 2000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email ".
+org.knime.core.node.InvalidSettingsException: This error occurred while communicating with the SMTP server: "com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email , 587; timeout 2000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email ".
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:701)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:680)
+	at org.knime.base.node.util.sendmail.SendMailNodeModel.execute(SendMailNodeModel.java:95)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email , 587; timeout 2000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email 
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2210)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:722)
+	at javax.mail.Service.connect(Service.java:342)
+	at javax.mail.Service.connect(Service.java:222)
+	at javax.mail.Service.connect(Service.java:243)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.sendMail(SendMailConfiguration.java:882)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:696)
+	... 15 more
+Caused by: java.net.UnknownHostException:  smtp.ethereal.email 
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:333)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:214)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2160)
+	... 21 more
+2024-10-23 19:59:40,069 : ERROR : KNIME-Worker-3-Send Email 3:56 :  : Node : Send Email : 3:56 : Execute failed: This error occurred while communicating with the SMTP server: "com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email , 587; timeout 100000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email ".
+org.knime.core.node.InvalidSettingsException: This error occurred while communicating with the SMTP server: "com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email , 587; timeout 100000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email ".
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:701)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:680)
+	at org.knime.base.node.util.sendmail.SendMailNodeModel.execute(SendMailNodeModel.java:95)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email , 587; timeout 100000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email 
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2210)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:722)
+	at javax.mail.Service.connect(Service.java:342)
+	at javax.mail.Service.connect(Service.java:222)
+	at javax.mail.Service.connect(Service.java:243)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.sendMail(SendMailConfiguration.java:882)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:696)
+	... 15 more
+Caused by: java.net.UnknownHostException:  smtp.ethereal.email 
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:333)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:214)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2160)
+	... 21 more
+2024-10-23 20:05:04,132 : ERROR : ForkJoinPool.commonPool-worker-1 :  : WelcomeAPEndpoint :  :  : Calling welcome page endpoint failed
+java.net.UnknownHostException: tips-and-tricks.knime.com
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(Unknown Source)
+	at java.base/sun.net.NetworkClient.doConnect(Unknown Source)
+	at java.base/sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at java.base/sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(Unknown Source)
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(Unknown Source)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(Unknown Source)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(Unknown Source)
+	at org.knime.product.rcp.intro.WelcomeAPEndpoint.request(WelcomeAPEndpoint.java:107)
+	at org.knime.product.rcp.intro.WelcomeAPEndpoint.lambda$0(WelcomeAPEndpoint.java:68)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2024-10-23 20:05:05,742 : WARN  : ModalContext :  : Node : Send Email : 3:55 : No mail settings have been set. Set them in the node configuration.
+2024-10-23 20:05:05,745 : WARN  : ModalContext :  : Node : Send Email : 3:55 : No mail settings have been set. Set them in the node configuration.
+2024-10-23 20:05:05,756 : WARN  : ModalContext :  : Node : Send Email : 3:56 : Execute failed: This error occurred while communicating with the SMTP server: "com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email , 587; timeout 100000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email ".
+2024-10-23 20:05:05,989 : WARN  : ModalContext :  : Node : Row Filter : 3:54 : At least one filter criterion is needed.
+2024-10-23 20:05:05,990 : WARN  : ModalContext :  : Node : Row Filter : 3:54 : At least one filter criterion is needed.
+2024-10-23 20:05:09,327 : ERROR : KNIME-Worker-0 :  : DesktopAPUtil :  :  : Could not check for updates
+java.io.IOException: update.knime.com, while checking updates for site at "https://update.knime.com/community-contributions/trusted/5.3".
+	at org.knime.core.eclipseUtil.UpdateChecker.checkForNewRelease(UpdateChecker.java:200)
+	at org.knime.product.rcp.intro.UpdateDetector.checkForNewRelease(UpdateDetector.java:97)
+	at org.knime.ui.java.util.DesktopAPUtil.checkForUpdate(DesktopAPUtil.java:249)
+	at org.knime.gateway.impl.webui.UpdateStateProvider.lambda$0(UpdateStateProvider.java:86)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: java.net.UnknownHostException: update.knime.com
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(Unknown Source)
+	at java.base/sun.net.NetworkClient.doConnect(Unknown Source)
+	at java.base/sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at java.base/sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(Unknown Source)
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(Unknown Source)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(Unknown Source)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(Unknown Source)
+	at org.knime.core.eclipseUtil.UpdateChecker.checkForNewRelease(UpdateChecker.java:182)
+	... 7 more
+2024-10-23 20:05:09,441 : WARN  : comm-pool-thread-1 :  : JsonRpcErrorResolver :  :  : An unexpected json rpc error occurred
+java.lang.NullPointerException: Cannot invoke "java.net.URL.getProtocol()" because "url" is null
+	at org.knime.core.util.proxy.URLConnectionFactory.resolveJavaNetProxy(URLConnectionFactory.java:125)
+	at org.knime.core.util.proxy.URLConnectionFactory.getConnection(URLConnectionFactory.java:90)
+	at org.knime.ai.assistant.java.UiStringsUtils.getUiStrings(UiStringsUtils.java:81)
+	at org.knime.ai.assistant.java.ChatBackend.getUiStrings(ChatBackend.java:215)
+	at java.base/java.util.Optional.map(Unknown Source)
+	at org.knime.gateway.impl.webui.service.DefaultKaiService.getUiStrings(DefaultKaiService.java:90)
+	at org.knime.gateway.impl.webui.jsonrpc.service.JsonRpcKaiServiceWrapper.getUiStrings(JsonRpcKaiServiceWrapper.java:91)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.invoke(JsonRpcBasicServer.java:478)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleObject(JsonRpcBasicServer.java:349)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleJsonNodeRequest(JsonRpcBasicServer.java:274)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleRequest(JsonRpcBasicServer.java:242)
+	at org.knime.gateway.impl.jsonrpc.JsonRpcRequestHandler.handle(JsonRpcRequestHandler.java:104)
+	at org.knime.ui.java.browser.lifecycle.Init.lambda$11(Init.java:296)
+	at com.equo.comm.common.MessageHandler.processReceivedEventMessage(MessageHandler.java:131)
+	at com.equo.comm.ee.provider.service.ChromiumService.receiveMessage(ChromiumService.java:98)
+	at com.equo.comm.ee.provider.CommunicationManagerChromiumImpl.receiveMessage(CommunicationManagerChromiumImpl.java:48)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.handleRequest(CommRouterHandler.java:33)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.lambda$1(CommRouterHandler.java:51)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2024-10-23 20:05:09,453 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Cannot invoke "java.net.URL.getProtocol()" because "url" is null (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-23 20:07:03,220 : ERROR : KNIME-Worker-1-Send Email 3:55 :  : Node : Send Email : 3:55 : Execute failed: This error occurred while communicating with the SMTP server: "com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email, 587; timeout 2000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email".
+org.knime.core.node.InvalidSettingsException: This error occurred while communicating with the SMTP server: "com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email, 587; timeout 2000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email".
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:701)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:680)
+	at org.knime.base.node.util.sendmail.SendMailNodeModel.execute(SendMailNodeModel.java:95)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email, 587; timeout 2000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2210)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:722)
+	at javax.mail.Service.connect(Service.java:342)
+	at javax.mail.Service.connect(Service.java:222)
+	at javax.mail.Service.connect(Service.java:243)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.sendMail(SendMailConfiguration.java:882)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:696)
+	... 15 more
+Caused by: java.net.UnknownHostException:  smtp.ethereal.email
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:333)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:214)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2160)
+	... 21 more
+2024-10-23 20:07:15,383 : ERROR : KNIME-Worker-1-Send Email 3:55 :  : Node : Send Email : 3:55 : Execute failed: This error occurred while communicating with the SMTP server: "com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email, 587; timeout 22000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email".
+org.knime.core.node.InvalidSettingsException: This error occurred while communicating with the SMTP server: "com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email, 587; timeout 22000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email".
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:701)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:680)
+	at org.knime.base.node.util.sendmail.SendMailNodeModel.execute(SendMailNodeModel.java:95)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email, 587; timeout 22000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2210)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:722)
+	at javax.mail.Service.connect(Service.java:342)
+	at javax.mail.Service.connect(Service.java:222)
+	at javax.mail.Service.connect(Service.java:243)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.sendMail(SendMailConfiguration.java:882)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:696)
+	... 15 more
+Caused by: java.net.UnknownHostException:  smtp.ethereal.email
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:333)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:214)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2160)
+	... 21 more
+2024-10-23 20:07:15,962 : ERROR : KNIME-Worker-1-Send Email 3:55 :  : Node : Send Email : 3:55 : Execute failed: This error occurred while communicating with the SMTP server: "com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email, 587; timeout 22000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email".
+org.knime.core.node.InvalidSettingsException: This error occurred while communicating with the SMTP server: "com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email, 587; timeout 22000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email".
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:701)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:680)
+	at org.knime.base.node.util.sendmail.SendMailNodeModel.execute(SendMailNodeModel.java:95)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email, 587; timeout 22000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2210)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:722)
+	at javax.mail.Service.connect(Service.java:342)
+	at javax.mail.Service.connect(Service.java:222)
+	at javax.mail.Service.connect(Service.java:243)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.sendMail(SendMailConfiguration.java:882)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:696)
+	... 15 more
+Caused by: java.net.UnknownHostException:  smtp.ethereal.email
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:333)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:214)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2160)
+	... 21 more
+2024-10-23 20:07:16,108 : ERROR : KNIME-Worker-1-Send Email 3:55 :  : Node : Send Email : 3:55 : Execute failed: This error occurred while communicating with the SMTP server: "com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email, 587; timeout 22000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email".
+org.knime.core.node.InvalidSettingsException: This error occurred while communicating with the SMTP server: "com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email, 587; timeout 22000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email".
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:701)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:680)
+	at org.knime.base.node.util.sendmail.SendMailNodeModel.execute(SendMailNodeModel.java:95)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email, 587; timeout 22000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2210)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:722)
+	at javax.mail.Service.connect(Service.java:342)
+	at javax.mail.Service.connect(Service.java:222)
+	at javax.mail.Service.connect(Service.java:243)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.sendMail(SendMailConfiguration.java:882)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:696)
+	... 15 more
+Caused by: java.net.UnknownHostException:  smtp.ethereal.email
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:333)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:214)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2160)
+	... 21 more
+2024-10-23 20:07:16,278 : ERROR : KNIME-Worker-1-Send Email 3:55 :  : Node : Send Email : 3:55 : Execute failed: This error occurred while communicating with the SMTP server: "com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email, 587; timeout 22000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email".
+org.knime.core.node.InvalidSettingsException: This error occurred while communicating with the SMTP server: "com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email, 587; timeout 22000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email".
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:701)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:680)
+	at org.knime.base.node.util.sendmail.SendMailNodeModel.execute(SendMailNodeModel.java:95)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email, 587; timeout 22000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2210)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:722)
+	at javax.mail.Service.connect(Service.java:342)
+	at javax.mail.Service.connect(Service.java:222)
+	at javax.mail.Service.connect(Service.java:243)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.sendMail(SendMailConfiguration.java:882)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:696)
+	... 15 more
+Caused by: java.net.UnknownHostException:  smtp.ethereal.email
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:333)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:214)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2160)
+	... 21 more
+2024-10-23 20:07:16,429 : ERROR : KNIME-Worker-1-Send Email 3:55 :  : Node : Send Email : 3:55 : Execute failed: This error occurred while communicating with the SMTP server: "com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email, 587; timeout 22000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email".
+org.knime.core.node.InvalidSettingsException: This error occurred while communicating with the SMTP server: "com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email, 587; timeout 22000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email".
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:701)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:680)
+	at org.knime.base.node.util.sendmail.SendMailNodeModel.execute(SendMailNodeModel.java:95)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email, 587; timeout 22000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2210)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:722)
+	at javax.mail.Service.connect(Service.java:342)
+	at javax.mail.Service.connect(Service.java:222)
+	at javax.mail.Service.connect(Service.java:243)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.sendMail(SendMailConfiguration.java:882)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:696)
+	... 15 more
+Caused by: java.net.UnknownHostException:  smtp.ethereal.email
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:333)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:214)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2160)
+	... 21 more
+2024-10-23 20:07:40,865 : ERROR : KNIME-Worker-1-Send Email 3:55 :  : Node : Send Email : 3:55 : Execute failed: This error occurred while communicating with the SMTP server: "javax.mail.SendFailedException: Invalid Addresses;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 501 Error: Bad recipient address syntax
+".
+org.knime.core.node.InvalidSettingsException: This error occurred while communicating with the SMTP server: "javax.mail.SendFailedException: Invalid Addresses;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 501 Error: Bad recipient address syntax
+".
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:701)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:680)
+	at org.knime.base.node.util.sendmail.SendMailNodeModel.execute(SendMailNodeModel.java:95)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: javax.mail.SendFailedException: Invalid Addresses;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 501 Error: Bad recipient address syntax
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:2064)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1286)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.sendMail(SendMailConfiguration.java:887)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:696)
+	... 15 more
+Caused by: com.sun.mail.smtp.SMTPAddressFailedException: 501 Error: Bad recipient address syntax
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:1917)
+	... 18 more
+2024-10-23 20:55:09,240 : WARN  : ModalContext :  : Node : Send Email : 3:56 : Execute failed: This error occurred while communicating with the SMTP server: "com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email , 587; timeout 100000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email ".
+2024-10-23 20:55:09,291 : WARN  : ModalContext :  : Node : Row Filter : 3:54 : At least one filter criterion is needed.
+2024-10-23 20:55:09,292 : WARN  : ModalContext :  : Node : Row Filter : 3:54 : At least one filter criterion is needed.
+2024-10-23 20:55:36,629 : ERROR : KNIME-Worker-0-Send Email 3:56 :  : Node : Send Email : 3:56 : Execute failed: This error occurred while communicating with the SMTP server: "com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email , 587; timeout 100000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email ".
+org.knime.core.node.InvalidSettingsException: This error occurred while communicating with the SMTP server: "com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email , 587; timeout 100000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email ".
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:701)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:680)
+	at org.knime.base.node.util.sendmail.SendMailNodeModel.execute(SendMailNodeModel.java:95)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: com.sun.mail.util.MailConnectException: Couldn't connect to host, port:  smtp.ethereal.email , 587; timeout 100000;
+  nested exception is:
+	java.net.UnknownHostException:  smtp.ethereal.email 
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2210)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:722)
+	at javax.mail.Service.connect(Service.java:342)
+	at javax.mail.Service.connect(Service.java:222)
+	at javax.mail.Service.connect(Service.java:243)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.sendMail(SendMailConfiguration.java:882)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:696)
+	... 15 more
+Caused by: java.net.UnknownHostException:  smtp.ethereal.email 
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:333)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:214)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2160)
+	... 21 more
+2024-10-23 20:57:04,632 : ERROR : KNIME-Worker-0-Send Email 3:56 :  : Node : Send Email : 3:56 : Execute failed: This error occurred while communicating with the SMTP server: "javax.mail.AuthenticationFailedException: 535 Authentication failed
+".
+org.knime.core.node.InvalidSettingsException: This error occurred while communicating with the SMTP server: "javax.mail.AuthenticationFailedException: 535 Authentication failed
+".
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:701)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:680)
+	at org.knime.base.node.util.sendmail.SendMailNodeModel.execute(SendMailNodeModel.java:95)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: javax.mail.AuthenticationFailedException: 535 Authentication failed
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:947)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:858)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:762)
+	at javax.mail.Service.connect(Service.java:342)
+	at javax.mail.Service.connect(Service.java:222)
+	at javax.mail.Service.connect(Service.java:243)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.sendMail(SendMailConfiguration.java:882)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:696)
+	... 15 more
+2024-10-23 20:58:51,514 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:56 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:38, 3:39, 3:40, 3:41, 3:42, 3:43, 3:44, 3:45, 3:46, 3:49, 3:50, 3:51, 3:53, 3:54, 3:55] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-23 20:58:51,515 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:56 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:38, 3:39, 3:40, 3:41, 3:42, 3:43, 3:44, 3:45, 3:46, 3:49, 3:50, 3:51, 3:53, 3:54, 3:55] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-23 20:58:56,644 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:43 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:38, 3:39, 3:40, 3:41, 3:42, 3:44, 3:45, 3:46, 3:49, 3:50, 3:51, 3:53, 3:54, 3:55] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-23 20:58:56,648 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:43 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:38, 3:39, 3:40, 3:41, 3:42, 3:44, 3:45, 3:46, 3:49, 3:50, 3:51, 3:53, 3:54, 3:55] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-23 21:00:12,738 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:56 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:38, 3:39, 3:40, 3:41, 3:42, 3:44, 3:45, 3:46, 3:49, 3:50, 3:51, 3:53, 3:54, 3:55] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-23 21:00:12,743 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:56 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:38, 3:39, 3:40, 3:41, 3:42, 3:44, 3:45, 3:46, 3:49, 3:50, 3:51, 3:53, 3:54, 3:55] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-23 21:01:23,619 : WARN  : comm-pool-thread-4 :  : Node : Variable to Table Row : 3:58 : No variables selected
+2024-10-23 21:01:25,070 : WARN  : comm-pool-thread-3 :  : Node : Variable to Table Row : 3:58 : No variables selected
+2024-10-23 21:01:29,272 : ERROR : KNIME-Worker-2-Create Date&Time Range 3:57 :  : Node : Create Date&Time Range : 3:57 : Execute failed: Cannot invoke "Object.getClass()" because the return value of "org.knime.time.util.SettingsModelDateTime.getSelectedDateTime()" is null
+java.lang.NullPointerException: Cannot invoke "Object.getClass()" because the return value of "org.knime.time.util.SettingsModelDateTime.getSelectedDateTime()" is null
+	at org.knime.time.node.create.createdatetime.CreateDateTimeNodeModel.execute(CreateDateTimeNodeModel.java:263)
+	at org.knime.core.node.NodeModel.execute(NodeModel.java:812)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-10-23 21:01:52,345 : WARN  : comm-pool-thread-3 :  : Node : Variable to Table Row : 3:58 : No variables selected
+2024-10-23 21:01:52,399 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:58 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:38, 3:39, 3:40, 3:41, 3:42, 3:44, 3:45, 3:46, 3:49, 3:50, 3:51, 3:53, 3:54, 3:55, 3:56, 3:57] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-23 21:01:52,400 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:58 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:16, 3:20, 3:23, 3:24, 3:26, 3:27, 3:28, 3:29, 3:30, 3:31, 3:32, 3:33, 3:34, 3:35, 3:36, 3:38, 3:39, 3:40, 3:41, 3:42, 3:44, 3:45, 3:46, 3:49, 3:50, 3:51, 3:53, 3:54, 3:55, 3:56, 3:57] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-23 21:06:40,993 : WARN  : main :  : CEFNodeView :  :  : ProseMirror expects the CSS white-space property to be set, preferably to 'pre-wrap'. It is recommended to load style/prosemirror.css from the prosemirror-view package. (source: http://org.knime.core.ui.dialog/uiext/defaultdialog/NodeDialog.js; line: 29236)
+2024-10-23 21:12:31,114 : WARN  : comm-pool-thread-8 :  : Node : Row Filter : 3:54 : At least one filter criterion is needed.
+2024-10-23 21:12:31,118 : WARN  : comm-pool-thread-8 :  : Node : GroupBy : 3:10 : No aggregation column defined
+2024-10-23 21:12:31,119 : WARN  : comm-pool-thread-8 :  : Node : GroupBy : 3:40 : No aggregation column defined
+2024-10-23 21:12:31,119 : WARN  : comm-pool-thread-8 :  : Node : GroupBy : 3:40 : All columns selected as group by column
+2024-10-23 21:12:31,120 : WARN  : comm-pool-thread-8 :  : Node : GroupBy : 3:41 : No aggregation column defined
+2024-10-23 21:12:35,931 : WARN  : KNIME-Worker-13-CSV Reader 3:1 :  : Node : Row Filter : 3:54 : At least one filter criterion is needed.
+2024-10-23 21:12:35,932 : WARN  : KNIME-Worker-13-CSV Reader 3:1 :  : Node : GroupBy : 3:10 : No aggregation column defined
+2024-10-23 21:12:35,933 : WARN  : KNIME-Worker-13-CSV Reader 3:1 :  : Node : GroupBy : 3:40 : No aggregation column defined
+2024-10-23 21:12:35,933 : WARN  : KNIME-Worker-13-CSV Reader 3:1 :  : Node : GroupBy : 3:40 : All columns selected as group by column
+2024-10-23 21:12:35,934 : WARN  : KNIME-Worker-13-CSV Reader 3:1 :  : Node : GroupBy : 3:41 : No aggregation column defined
+2024-10-23 21:16:36,505 : WARN  : main :  : CEFNodeView :  :  : ProseMirror expects the CSS white-space property to be set, preferably to 'pre-wrap'. It is recommended to load style/prosemirror.css from the prosemirror-view package. (source: http://org.knime.core.ui.dialog/uiext/defaultdialog/NodeDialog.js; line: 29236)
+2024-10-23 21:18:11,703 : WARN  : comm-pool-thread-11 :  : Node : Row Filter : 3:54 : At least one filter criterion is needed.
+2024-10-23 21:18:11,704 : WARN  : comm-pool-thread-11 :  : Node : GroupBy : 3:10 : No aggregation column defined
+2024-10-23 21:18:11,704 : WARN  : comm-pool-thread-11 :  : Node : GroupBy : 3:40 : No aggregation column defined
+2024-10-23 21:18:11,705 : WARN  : comm-pool-thread-11 :  : Node : GroupBy : 3:40 : All columns selected as group by column
+2024-10-23 21:18:11,705 : WARN  : comm-pool-thread-11 :  : Node : GroupBy : 3:41 : No aggregation column defined
+2024-10-23 21:18:16,817 : WARN  : KNIME-Worker-18-CSV Reader 3:1 :  : Node : Row Filter : 3:54 : At least one filter criterion is needed.
+2024-10-23 21:18:16,819 : WARN  : KNIME-Worker-18-CSV Reader 3:1 :  : Node : GroupBy : 3:10 : No aggregation column defined
+2024-10-23 21:18:16,819 : WARN  : KNIME-Worker-18-CSV Reader 3:1 :  : Node : GroupBy : 3:40 : No aggregation column defined
+2024-10-23 21:18:16,820 : WARN  : KNIME-Worker-18-CSV Reader 3:1 :  : Node : GroupBy : 3:40 : All columns selected as group by column
+2024-10-23 21:18:16,820 : WARN  : KNIME-Worker-18-CSV Reader 3:1 :  : Node : GroupBy : 3:41 : No aggregation column defined
+2024-10-23 21:20:50,483 : ERROR : KNIME-Worker-22-Report PDF Writer 3:2 :  : Node : Report PDF Writer : 3:2 : Execute failed: Directory 'C:\Users\Daniel Pereira' of output file does not exist
+org.knime.core.node.InvalidSettingsException: Directory 'C:\Users\Daniel Pereira' of output file does not exist
+	at org.knime.core.node.util.CheckUtils.checkDestinationFile(CheckUtils.java:402)
+	at org.knime.core.node.util.CheckUtils.checkDestinationFile(CheckUtils.java:354)
+	at org.knime.reporting2.nodes.pdfwriter.ReportPdfWriterNodeModel.execute(ReportPdfWriterNodeModel.java:147)
+	at org.knime.reporting2.nodes.pdfwriter.ReportPdfWriterNodeModel.execute(ReportPdfWriterNodeModel.java:1)
+	at org.knime.core.webui.node.impl.WebUINodeModel.execute(WebUINodeModel.java:153)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-10-23 21:21:03,308 : ERROR : KNIME-Worker-23-Report PDF Writer 3:2 :  : Node : Report PDF Writer : 3:2 : Execute failed: Directory 'C:\Users\Daniel Pereira' of output file does not exist
+org.knime.core.node.InvalidSettingsException: Directory 'C:\Users\Daniel Pereira' of output file does not exist
+	at org.knime.core.node.util.CheckUtils.checkDestinationFile(CheckUtils.java:402)
+	at org.knime.core.node.util.CheckUtils.checkDestinationFile(CheckUtils.java:354)
+	at org.knime.reporting2.nodes.pdfwriter.ReportPdfWriterNodeModel.execute(ReportPdfWriterNodeModel.java:147)
+	at org.knime.reporting2.nodes.pdfwriter.ReportPdfWriterNodeModel.execute(ReportPdfWriterNodeModel.java:1)
+	at org.knime.core.webui.node.impl.WebUINodeModel.execute(WebUINodeModel.java:153)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-10-23 21:32:27,575 : ERROR : main :  : Node : Row Aggregator : 3:60 : Could not save model
+java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "<parameter1>" is null
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.ensureObj(Unknown Source)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.get(Unknown Source)
+	at java.base/java.lang.reflect.Field.get(Unknown Source)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.lambda$0(FieldBasedNodeSettingsPersistor.java:91)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.useBlackMagicToAccessFields(FieldBasedNodeSettingsPersistor.java:147)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.save(FieldBasedNodeSettingsPersistor.java:91)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.save(FieldBasedNodeSettingsPersistor.java:1)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.DefaultFieldNodeSettingsPersistorFactory$NestedFieldBasedNodeSettingsPersistor.save(DefaultFieldNodeSettingsPersistorFactory.java:132)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.DefaultFieldNodeSettingsPersistorFactory$NestedFieldBasedNodeSettingsPersistor.save(DefaultFieldNodeSettingsPersistorFactory.java:1)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.uncheckedSave(FieldBasedNodeSettingsPersistor.java:116)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.lambda$0(FieldBasedNodeSettingsPersistor.java:91)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.useBlackMagicToAccessFields(FieldBasedNodeSettingsPersistor.java:147)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.save(FieldBasedNodeSettingsPersistor.java:91)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.save(FieldBasedNodeSettingsPersistor.java:1)
+	at org.knime.core.webui.node.dialog.defaultdialog.DefaultNodeSettings.castAndSaveSettings(DefaultNodeSettings.java:461)
+	at org.knime.core.webui.node.dialog.defaultdialog.DefaultNodeSettings.saveSettings(DefaultNodeSettings.java:453)
+	at org.knime.core.webui.node.impl.WebUINodeModel.saveSettingsTo(WebUINodeModel.java:209)
+	at org.knime.core.node.Node.saveModelSettingsTo(Node.java:2383)
+	at org.knime.core.node.workflow.NativeNodeContainer.performSaveModelSettingsTo(NativeNodeContainer.java:1175)
+	at org.knime.core.node.workflow.SingleNodeContainer.saveModelSettingsTo(SingleNodeContainer.java:1054)
+	at org.knime.core.node.workflow.SingleNodeContainer.saveSNCSettings(SingleNodeContainer.java:1041)
+	at org.knime.core.node.workflow.SingleNodeContainer.saveSettings(SingleNodeContainer.java:1010)
+	at org.knime.core.node.workflow.SingleNodeContainer.getNodeSettings(SingleNodeContainer.java:991)
+	at org.knime.core.webui.node.dialog.InitialData.getSettingsWithoutFlowVariableOverrides(InitialData.java:157)
+	at org.knime.core.webui.node.dialog.InitialData.getSettingsOverwrittenByFlowVariables(InitialData.java:145)
+	at org.knime.core.webui.node.dialog.InitialData.getSettingsOverwrittenByVariables(InitialData.java:109)
+	at org.knime.core.webui.node.dialog.InitialData.get(InitialData.java:96)
+	at org.knime.core.webui.data.InitialDataService.getInitialData(InitialDataService.java:109)
+	at org.knime.core.webui.node.DataServiceManager.callInitialDataService(DataServiceManager.java:143)
+	at org.knime.gateway.api.entity.UIExtensionEnt.<init>(UIExtensionEnt.java:120)
+	at org.knime.gateway.api.entity.UIExtensionEnt.<init>(UIExtensionEnt.java:90)
+	at org.knime.gateway.api.entity.NodeDialogEnt.<init>(NodeDialogEnt.java:74)
+	at org.knime.js.cef.pagebuilder.PageBuilderUtil$UIExtensionEnts.<init>(PageBuilderUtil.java:337)
+	at org.knime.js.cef.pagebuilder.PageBuilderUtil.initializePageBuilderForView(PageBuilderUtil.java:124)
+	at org.knime.js.cef.nodeview.CEFNodeView.lambda$6(CEFNodeView.java:413)
+	at org.knime.js.cef.nodeview.CEFNodeView$3.completed(CEFNodeView.java:427)
+	at com.equo.chromium.swt.internal.Chromium.lambda$9(Chromium.java:841)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.knime.js.cef.nodeview.CEFNodeView.blockUntilDisposed(CEFNodeView.java:463)
+	at org.knime.js.cef.nodeview.CEFNodeView.callOpenView(CEFNodeView.java:357)
+	at org.knime.core.node.AbstractNodeView.openView(AbstractNodeView.java:197)
+	at org.knime.core.node.Node.invokeOpenView(Node.java:2708)
+	at org.knime.workbench.editor2.actions.OpenNodeViewAction.openNodeView(OpenNodeViewAction.java:146)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:865)
+	at org.knime.ui.java.api.NodeAPI.openNodeDialog(NodeAPI.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor218.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.knime.ui.java.api.DesktopAPI.invokeMethod(DesktopAPI.java:174)
+	at org.knime.ui.java.api.DesktopAPI.lambda$1(DesktopAPI.java:145)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:211)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+2024-10-23 21:32:27,575 : ERROR : main :  : Node : Row Aggregator : 3:60 : Could not save model
+java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "<parameter1>" is null
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.ensureObj(Unknown Source)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.get(Unknown Source)
+	at java.base/java.lang.reflect.Field.get(Unknown Source)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.lambda$0(FieldBasedNodeSettingsPersistor.java:91)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.useBlackMagicToAccessFields(FieldBasedNodeSettingsPersistor.java:147)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.save(FieldBasedNodeSettingsPersistor.java:91)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.save(FieldBasedNodeSettingsPersistor.java:1)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.DefaultFieldNodeSettingsPersistorFactory$NestedFieldBasedNodeSettingsPersistor.save(DefaultFieldNodeSettingsPersistorFactory.java:132)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.DefaultFieldNodeSettingsPersistorFactory$NestedFieldBasedNodeSettingsPersistor.save(DefaultFieldNodeSettingsPersistorFactory.java:1)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.uncheckedSave(FieldBasedNodeSettingsPersistor.java:116)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.lambda$0(FieldBasedNodeSettingsPersistor.java:91)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.useBlackMagicToAccessFields(FieldBasedNodeSettingsPersistor.java:147)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.save(FieldBasedNodeSettingsPersistor.java:91)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.save(FieldBasedNodeSettingsPersistor.java:1)
+	at org.knime.core.webui.node.dialog.defaultdialog.DefaultNodeSettings.castAndSaveSettings(DefaultNodeSettings.java:461)
+	at org.knime.core.webui.node.dialog.defaultdialog.DefaultNodeSettings.saveSettings(DefaultNodeSettings.java:453)
+	at org.knime.core.webui.node.impl.WebUINodeModel.saveSettingsTo(WebUINodeModel.java:209)
+	at org.knime.core.node.Node.saveModelSettingsTo(Node.java:2383)
+	at org.knime.core.node.workflow.NativeNodeContainer.performSaveModelSettingsTo(NativeNodeContainer.java:1175)
+	at org.knime.core.node.workflow.SingleNodeContainer.saveModelSettingsTo(SingleNodeContainer.java:1054)
+	at org.knime.core.node.workflow.SingleNodeContainer.saveSNCSettings(SingleNodeContainer.java:1041)
+	at org.knime.core.node.workflow.SingleNodeContainer.saveSettings(SingleNodeContainer.java:1010)
+	at org.knime.core.node.workflow.SingleNodeContainer.getNodeSettings(SingleNodeContainer.java:991)
+	at org.knime.core.webui.node.dialog.InitialData.getSettingsOverwrittenByVariables(InitialData.java:115)
+	at org.knime.core.webui.node.dialog.InitialData.get(InitialData.java:96)
+	at org.knime.core.webui.data.InitialDataService.getInitialData(InitialDataService.java:109)
+	at org.knime.core.webui.node.DataServiceManager.callInitialDataService(DataServiceManager.java:143)
+	at org.knime.gateway.api.entity.UIExtensionEnt.<init>(UIExtensionEnt.java:120)
+	at org.knime.gateway.api.entity.UIExtensionEnt.<init>(UIExtensionEnt.java:90)
+	at org.knime.gateway.api.entity.NodeDialogEnt.<init>(NodeDialogEnt.java:74)
+	at org.knime.js.cef.pagebuilder.PageBuilderUtil$UIExtensionEnts.<init>(PageBuilderUtil.java:337)
+	at org.knime.js.cef.pagebuilder.PageBuilderUtil.initializePageBuilderForView(PageBuilderUtil.java:124)
+	at org.knime.js.cef.nodeview.CEFNodeView.lambda$6(CEFNodeView.java:413)
+	at org.knime.js.cef.nodeview.CEFNodeView$3.completed(CEFNodeView.java:427)
+	at com.equo.chromium.swt.internal.Chromium.lambda$9(Chromium.java:841)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.knime.js.cef.nodeview.CEFNodeView.blockUntilDisposed(CEFNodeView.java:463)
+	at org.knime.js.cef.nodeview.CEFNodeView.callOpenView(CEFNodeView.java:357)
+	at org.knime.core.node.AbstractNodeView.openView(AbstractNodeView.java:197)
+	at org.knime.core.node.Node.invokeOpenView(Node.java:2708)
+	at org.knime.workbench.editor2.actions.OpenNodeViewAction.openNodeView(OpenNodeViewAction.java:146)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:865)
+	at org.knime.ui.java.api.NodeAPI.openNodeDialog(NodeAPI.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor218.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.knime.ui.java.api.DesktopAPI.invokeMethod(DesktopAPI.java:174)
+	at org.knime.ui.java.api.DesktopAPI.lambda$1(DesktopAPI.java:145)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:211)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+2024-10-23 21:32:27,577 : ERROR : main :  : InitialData : Row Aggregator : 3:60 : Settings overwritten by flow variables are invalid. So the flow variables are ignored. Error message is: String for key "mode" not found..
+org.knime.core.node.InvalidSettingsException: String for key "mode" not found.
+	at org.knime.core.node.config.base.ConfigBase.getString(ConfigBase.java:423)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.EnumFieldPersistor.load(EnumFieldPersistor.java:82)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.EnumFieldPersistor.load(EnumFieldPersistor.java:1)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.lambda$3(FieldBasedNodeSettingsPersistor.java:136)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.useBlackMagicToAccessFields(FieldBasedNodeSettingsPersistor.java:147)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.load(FieldBasedNodeSettingsPersistor.java:136)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.load(FieldBasedNodeSettingsPersistor.java:1)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.DefaultFieldNodeSettingsPersistorFactory$NestedFieldBasedNodeSettingsPersistor.load(DefaultFieldNodeSettingsPersistorFactory.java:127)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.DefaultFieldNodeSettingsPersistorFactory$NestedFieldBasedNodeSettingsPersistor.load(DefaultFieldNodeSettingsPersistorFactory.java:1)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.lambda$3(FieldBasedNodeSettingsPersistor.java:136)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.useBlackMagicToAccessFields(FieldBasedNodeSettingsPersistor.java:147)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.load(FieldBasedNodeSettingsPersistor.java:136)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.load(FieldBasedNodeSettingsPersistor.java:1)
+	at org.knime.core.webui.node.dialog.defaultdialog.DefaultNodeSettings.loadSettings(DefaultNodeSettings.java:411)
+	at org.knime.core.webui.node.dialog.defaultdialog.DefaultNodeSettingsService.validateNodeSettingsAndVariables(DefaultNodeSettingsService.java:192)
+	at org.knime.core.webui.node.dialog.InitialData.revertOverridesIfInvalid(InitialData.java:191)
+	at org.knime.core.webui.node.dialog.InitialData.getSettingsOverwrittenByVariables(InitialData.java:118)
+	at org.knime.core.webui.node.dialog.InitialData.get(InitialData.java:96)
+	at org.knime.core.webui.data.InitialDataService.getInitialData(InitialDataService.java:109)
+	at org.knime.core.webui.node.DataServiceManager.callInitialDataService(DataServiceManager.java:143)
+	at org.knime.gateway.api.entity.UIExtensionEnt.<init>(UIExtensionEnt.java:120)
+	at org.knime.gateway.api.entity.UIExtensionEnt.<init>(UIExtensionEnt.java:90)
+	at org.knime.gateway.api.entity.NodeDialogEnt.<init>(NodeDialogEnt.java:74)
+	at org.knime.js.cef.pagebuilder.PageBuilderUtil$UIExtensionEnts.<init>(PageBuilderUtil.java:337)
+	at org.knime.js.cef.pagebuilder.PageBuilderUtil.initializePageBuilderForView(PageBuilderUtil.java:124)
+	at org.knime.js.cef.nodeview.CEFNodeView.lambda$6(CEFNodeView.java:413)
+	at org.knime.js.cef.nodeview.CEFNodeView$3.completed(CEFNodeView.java:427)
+	at com.equo.chromium.swt.internal.Chromium.lambda$9(Chromium.java:841)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.knime.js.cef.nodeview.CEFNodeView.blockUntilDisposed(CEFNodeView.java:463)
+	at org.knime.js.cef.nodeview.CEFNodeView.callOpenView(CEFNodeView.java:357)
+	at org.knime.core.node.AbstractNodeView.openView(AbstractNodeView.java:197)
+	at org.knime.core.node.Node.invokeOpenView(Node.java:2708)
+	at org.knime.workbench.editor2.actions.OpenNodeViewAction.openNodeView(OpenNodeViewAction.java:146)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:865)
+	at org.knime.ui.java.api.NodeAPI.openNodeDialog(NodeAPI.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor218.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.knime.ui.java.api.DesktopAPI.invokeMethod(DesktopAPI.java:174)
+	at org.knime.ui.java.api.DesktopAPI.lambda$1(DesktopAPI.java:145)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:211)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+2024-10-23 21:32:27,578 : ERROR : main :  : Node : Row Aggregator : 3:60 : Could not save model
+java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "<parameter1>" is null
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.ensureObj(Unknown Source)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.get(Unknown Source)
+	at java.base/java.lang.reflect.Field.get(Unknown Source)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.lambda$0(FieldBasedNodeSettingsPersistor.java:91)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.useBlackMagicToAccessFields(FieldBasedNodeSettingsPersistor.java:147)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.save(FieldBasedNodeSettingsPersistor.java:91)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.save(FieldBasedNodeSettingsPersistor.java:1)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.DefaultFieldNodeSettingsPersistorFactory$NestedFieldBasedNodeSettingsPersistor.save(DefaultFieldNodeSettingsPersistorFactory.java:132)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.DefaultFieldNodeSettingsPersistorFactory$NestedFieldBasedNodeSettingsPersistor.save(DefaultFieldNodeSettingsPersistorFactory.java:1)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.uncheckedSave(FieldBasedNodeSettingsPersistor.java:116)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.lambda$0(FieldBasedNodeSettingsPersistor.java:91)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.useBlackMagicToAccessFields(FieldBasedNodeSettingsPersistor.java:147)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.save(FieldBasedNodeSettingsPersistor.java:91)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.save(FieldBasedNodeSettingsPersistor.java:1)
+	at org.knime.core.webui.node.dialog.defaultdialog.DefaultNodeSettings.castAndSaveSettings(DefaultNodeSettings.java:461)
+	at org.knime.core.webui.node.dialog.defaultdialog.DefaultNodeSettings.saveSettings(DefaultNodeSettings.java:453)
+	at org.knime.core.webui.node.impl.WebUINodeModel.saveSettingsTo(WebUINodeModel.java:209)
+	at org.knime.core.node.Node.saveModelSettingsTo(Node.java:2383)
+	at org.knime.core.node.workflow.NativeNodeContainer.performSaveModelSettingsTo(NativeNodeContainer.java:1175)
+	at org.knime.core.node.workflow.SingleNodeContainer.saveModelSettingsTo(SingleNodeContainer.java:1054)
+	at org.knime.core.node.workflow.SingleNodeContainer.saveSNCSettings(SingleNodeContainer.java:1041)
+	at org.knime.core.node.workflow.SingleNodeContainer.saveSettings(SingleNodeContainer.java:1010)
+	at org.knime.core.node.workflow.SingleNodeContainer.getNodeSettings(SingleNodeContainer.java:991)
+	at org.knime.core.webui.node.dialog.InitialData.getSettingsWithoutFlowVariableOverrides(InitialData.java:157)
+	at org.knime.core.webui.node.dialog.InitialData.lambda$1(InitialData.java:196)
+	at java.base/java.lang.Iterable.forEach(Unknown Source)
+	at org.knime.core.webui.node.dialog.InitialData.revertOverridesIfInvalid(InitialData.java:195)
+	at org.knime.core.webui.node.dialog.InitialData.getSettingsOverwrittenByVariables(InitialData.java:118)
+	at org.knime.core.webui.node.dialog.InitialData.get(InitialData.java:96)
+	at org.knime.core.webui.data.InitialDataService.getInitialData(InitialDataService.java:109)
+	at org.knime.core.webui.node.DataServiceManager.callInitialDataService(DataServiceManager.java:143)
+	at org.knime.gateway.api.entity.UIExtensionEnt.<init>(UIExtensionEnt.java:120)
+	at org.knime.gateway.api.entity.UIExtensionEnt.<init>(UIExtensionEnt.java:90)
+	at org.knime.gateway.api.entity.NodeDialogEnt.<init>(NodeDialogEnt.java:74)
+	at org.knime.js.cef.pagebuilder.PageBuilderUtil$UIExtensionEnts.<init>(PageBuilderUtil.java:337)
+	at org.knime.js.cef.pagebuilder.PageBuilderUtil.initializePageBuilderForView(PageBuilderUtil.java:124)
+	at org.knime.js.cef.nodeview.CEFNodeView.lambda$6(CEFNodeView.java:413)
+	at org.knime.js.cef.nodeview.CEFNodeView$3.completed(CEFNodeView.java:427)
+	at com.equo.chromium.swt.internal.Chromium.lambda$9(Chromium.java:841)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.knime.js.cef.nodeview.CEFNodeView.blockUntilDisposed(CEFNodeView.java:463)
+	at org.knime.js.cef.nodeview.CEFNodeView.callOpenView(CEFNodeView.java:357)
+	at org.knime.core.node.AbstractNodeView.openView(AbstractNodeView.java:197)
+	at org.knime.core.node.Node.invokeOpenView(Node.java:2708)
+	at org.knime.workbench.editor2.actions.OpenNodeViewAction.openNodeView(OpenNodeViewAction.java:146)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:865)
+	at org.knime.ui.java.api.NodeAPI.openNodeDialog(NodeAPI.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor218.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.knime.ui.java.api.DesktopAPI.invokeMethod(DesktopAPI.java:174)
+	at org.knime.ui.java.api.DesktopAPI.lambda$1(DesktopAPI.java:145)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:211)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+2024-10-23 21:32:27,582 : ERROR : main :  : Node : Row Aggregator : 3:60 : Could not save model
+java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "<parameter1>" is null
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.ensureObj(Unknown Source)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.get(Unknown Source)
+	at java.base/java.lang.reflect.Field.get(Unknown Source)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.lambda$0(FieldBasedNodeSettingsPersistor.java:91)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.useBlackMagicToAccessFields(FieldBasedNodeSettingsPersistor.java:147)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.save(FieldBasedNodeSettingsPersistor.java:91)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.save(FieldBasedNodeSettingsPersistor.java:1)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.DefaultFieldNodeSettingsPersistorFactory$NestedFieldBasedNodeSettingsPersistor.save(DefaultFieldNodeSettingsPersistorFactory.java:132)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.DefaultFieldNodeSettingsPersistorFactory$NestedFieldBasedNodeSettingsPersistor.save(DefaultFieldNodeSettingsPersistorFactory.java:1)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.uncheckedSave(FieldBasedNodeSettingsPersistor.java:116)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.lambda$0(FieldBasedNodeSettingsPersistor.java:91)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.useBlackMagicToAccessFields(FieldBasedNodeSettingsPersistor.java:147)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.save(FieldBasedNodeSettingsPersistor.java:91)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.save(FieldBasedNodeSettingsPersistor.java:1)
+	at org.knime.core.webui.node.dialog.defaultdialog.DefaultNodeSettings.castAndSaveSettings(DefaultNodeSettings.java:461)
+	at org.knime.core.webui.node.dialog.defaultdialog.DefaultNodeSettings.saveSettings(DefaultNodeSettings.java:453)
+	at org.knime.core.webui.node.impl.WebUINodeModel.saveSettingsTo(WebUINodeModel.java:209)
+	at org.knime.core.node.Node.saveModelSettingsTo(Node.java:2383)
+	at org.knime.core.node.workflow.NativeNodeContainer.performSaveModelSettingsTo(NativeNodeContainer.java:1175)
+	at org.knime.core.node.workflow.SingleNodeContainer.saveModelSettingsTo(SingleNodeContainer.java:1054)
+	at org.knime.core.node.workflow.SingleNodeContainer.saveSNCSettings(SingleNodeContainer.java:1041)
+	at org.knime.core.node.workflow.SingleNodeContainer.saveSettings(SingleNodeContainer.java:1010)
+	at org.knime.core.node.workflow.SingleNodeContainer.getNodeSettings(SingleNodeContainer.java:991)
+	at org.knime.core.webui.node.dialog.InitialData.lambda$1(InitialData.java:198)
+	at java.base/java.lang.Iterable.forEach(Unknown Source)
+	at org.knime.core.webui.node.dialog.InitialData.revertOverridesIfInvalid(InitialData.java:195)
+	at org.knime.core.webui.node.dialog.InitialData.getSettingsOverwrittenByVariables(InitialData.java:118)
+	at org.knime.core.webui.node.dialog.InitialData.get(InitialData.java:96)
+	at org.knime.core.webui.data.InitialDataService.getInitialData(InitialDataService.java:109)
+	at org.knime.core.webui.node.DataServiceManager.callInitialDataService(DataServiceManager.java:143)
+	at org.knime.gateway.api.entity.UIExtensionEnt.<init>(UIExtensionEnt.java:120)
+	at org.knime.gateway.api.entity.UIExtensionEnt.<init>(UIExtensionEnt.java:90)
+	at org.knime.gateway.api.entity.NodeDialogEnt.<init>(NodeDialogEnt.java:74)
+	at org.knime.js.cef.pagebuilder.PageBuilderUtil$UIExtensionEnts.<init>(PageBuilderUtil.java:337)
+	at org.knime.js.cef.pagebuilder.PageBuilderUtil.initializePageBuilderForView(PageBuilderUtil.java:124)
+	at org.knime.js.cef.nodeview.CEFNodeView.lambda$6(CEFNodeView.java:413)
+	at org.knime.js.cef.nodeview.CEFNodeView$3.completed(CEFNodeView.java:427)
+	at com.equo.chromium.swt.internal.Chromium.lambda$9(Chromium.java:841)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.knime.js.cef.nodeview.CEFNodeView.blockUntilDisposed(CEFNodeView.java:463)
+	at org.knime.js.cef.nodeview.CEFNodeView.callOpenView(CEFNodeView.java:357)
+	at org.knime.core.node.AbstractNodeView.openView(AbstractNodeView.java:197)
+	at org.knime.core.node.Node.invokeOpenView(Node.java:2708)
+	at org.knime.workbench.editor2.actions.OpenNodeViewAction.openNodeView(OpenNodeViewAction.java:146)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:865)
+	at org.knime.ui.java.api.NodeAPI.openNodeDialog(NodeAPI.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor218.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.knime.ui.java.api.DesktopAPI.invokeMethod(DesktopAPI.java:174)
+	at org.knime.ui.java.api.DesktopAPI.lambda$1(DesktopAPI.java:145)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:211)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+2024-10-23 21:32:27,583 : ERROR : main :  : NodeSettingsToJsonFormsSettings : Row Aggregator : 3:60 : Failed to load settings ('String for key "mode" not found.'). New settings are created for the dialog.
+org.knime.core.node.InvalidSettingsException: String for key "mode" not found.
+	at org.knime.core.node.config.base.ConfigBase.getString(ConfigBase.java:423)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.EnumFieldPersistor.load(EnumFieldPersistor.java:82)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.EnumFieldPersistor.load(EnumFieldPersistor.java:1)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.lambda$3(FieldBasedNodeSettingsPersistor.java:136)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.useBlackMagicToAccessFields(FieldBasedNodeSettingsPersistor.java:147)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.load(FieldBasedNodeSettingsPersistor.java:136)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.load(FieldBasedNodeSettingsPersistor.java:1)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.DefaultFieldNodeSettingsPersistorFactory$NestedFieldBasedNodeSettingsPersistor.load(DefaultFieldNodeSettingsPersistorFactory.java:127)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.DefaultFieldNodeSettingsPersistorFactory$NestedFieldBasedNodeSettingsPersistor.load(DefaultFieldNodeSettingsPersistorFactory.java:1)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.lambda$3(FieldBasedNodeSettingsPersistor.java:136)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.useBlackMagicToAccessFields(FieldBasedNodeSettingsPersistor.java:147)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.load(FieldBasedNodeSettingsPersistor.java:136)
+	at org.knime.core.webui.node.dialog.defaultdialog.persistence.field.FieldBasedNodeSettingsPersistor.load(FieldBasedNodeSettingsPersistor.java:1)
+	at org.knime.core.webui.node.dialog.defaultdialog.DefaultNodeSettings.loadSettings(DefaultNodeSettings.java:411)
+	at org.knime.core.webui.node.dialog.defaultdialog.settingsconversion.NodeSettingsToJsonFormsSettings.fromNodeSettingsToDefaultNodeSettings(NodeSettingsToJsonFormsSettings.java:131)
+	at org.knime.core.webui.node.dialog.defaultdialog.settingsconversion.NodeSettingsToJsonFormsSettings.fromNodeSettingsToDefaultNodeSettingsOrDefault(NodeSettingsToJsonFormsSettings.java:137)
+	at org.knime.core.webui.node.dialog.defaultdialog.settingsconversion.NodeSettingsToJsonFormsSettings$GetSettings.getDefaultNodeSettingsUnchecked(NodeSettingsToJsonFormsSettings.java:156)
+	at org.knime.core.webui.node.dialog.defaultdialog.settingsconversion.NodeSettingsToJsonFormsSettings.allNodeSettingsToJsonFormsSettings(NodeSettingsToJsonFormsSettings.java:124)
+	at org.knime.core.webui.node.dialog.defaultdialog.settingsconversion.NodeSettingsToJsonFormsSettings.nodeSettingsToJsonFormsSettingsOrDefault(NodeSettingsToJsonFormsSettings.java:115)
+	at org.knime.core.webui.node.dialog.defaultdialog.DefaultNodeSettingsService.fromNodeSettings(DefaultNodeSettingsService.java:164)
+	at org.knime.core.webui.node.dialog.InitialData.get(InitialData.java:97)
+	at org.knime.core.webui.data.InitialDataService.getInitialData(InitialDataService.java:109)
+	at org.knime.core.webui.node.DataServiceManager.callInitialDataService(DataServiceManager.java:143)
+	at org.knime.gateway.api.entity.UIExtensionEnt.<init>(UIExtensionEnt.java:120)
+	at org.knime.gateway.api.entity.UIExtensionEnt.<init>(UIExtensionEnt.java:90)
+	at org.knime.gateway.api.entity.NodeDialogEnt.<init>(NodeDialogEnt.java:74)
+	at org.knime.js.cef.pagebuilder.PageBuilderUtil$UIExtensionEnts.<init>(PageBuilderUtil.java:337)
+	at org.knime.js.cef.pagebuilder.PageBuilderUtil.initializePageBuilderForView(PageBuilderUtil.java:124)
+	at org.knime.js.cef.nodeview.CEFNodeView.lambda$6(CEFNodeView.java:413)
+	at org.knime.js.cef.nodeview.CEFNodeView$3.completed(CEFNodeView.java:427)
+	at com.equo.chromium.swt.internal.Chromium.lambda$9(Chromium.java:841)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.knime.js.cef.nodeview.CEFNodeView.blockUntilDisposed(CEFNodeView.java:463)
+	at org.knime.js.cef.nodeview.CEFNodeView.callOpenView(CEFNodeView.java:357)
+	at org.knime.core.node.AbstractNodeView.openView(AbstractNodeView.java:197)
+	at org.knime.core.node.Node.invokeOpenView(Node.java:2708)
+	at org.knime.workbench.editor2.actions.OpenNodeViewAction.openNodeView(OpenNodeViewAction.java:146)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:865)
+	at org.knime.ui.java.api.NodeAPI.openNodeDialog(NodeAPI.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor218.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.knime.ui.java.api.DesktopAPI.invokeMethod(DesktopAPI.java:174)
+	at org.knime.ui.java.api.DesktopAPI.lambda$1(DesktopAPI.java:145)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:211)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+2024-10-23 21:35:38,433 : WARN  : main :  : WizardNodeView :  :  : Unable to retrieve value from view
+2024-10-23 21:39:14,323 : WARN  : main :  : WizardNodeView :  :  : Unable to retrieve value from view
+2024-10-23 21:39:14,833 : WARN  : main :  : WizardNodeView :  :  : Unable to retrieve value from view
+2024-10-23 21:39:27,113 : WARN  : main :  : WizardNodeView :  :  : Unable to retrieve value from view
+2024-10-23 21:40:54,473 : WARN  : comm-pool-thread-18 :  : Node : Row Filter : 3:59:0:63 : At least one filter criterion is needed.
+2024-10-23 21:41:16,344 : WARN  : comm-pool-thread-17 :  : Node : Row Filter : 3:61 : At least one filter criterion is needed.
+2024-10-23 21:41:17,774 : WARN  : comm-pool-thread-17 :  : Node : Row Filter : 3:62:61 : At least one filter criterion is needed.
+2024-10-23 21:41:17,778 : WARN  : comm-pool-thread-17 :  : Node : Row Filter : 3:62:0:61 : At least one filter criterion is needed.
+2024-10-23 21:41:17,779 : WARN  : comm-pool-thread-17 :  : Node : Row Filter : 3:62:0:61 : At least one filter criterion is needed.
+2024-10-23 21:41:27,403 : WARN  : KNIME-Worker-40-Component Input 3:62:0:1 :  : Node : Row Filter : 3:62:0:61 : At least one filter criterion is needed.
+2024-10-23 21:41:27,409 : ERROR : KNIME-Worker-39-Component Output 3:62:0:2 :  : Node : Component Output : 3:62:0:2 : Errors in workflow - Contains one node with execution failure (Row Filter #61)
+Row Filter #61: At least one filter criterion is needed.
+org.knime.core.node.KNIMEException: Errors in workflow - Contains one node with execution failure (Row Filter #61)
+	at org.knime.core.node.KNIMEException.of(KNIMEException.java:124)
+	at java.base/java.util.Optional.map(Unknown Source)
+	at org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeOutputNodeModel.waitForContentToExecute(VirtualSubNodeOutputNodeModel.java:213)
+	at org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeOutputNodeModel.execute(VirtualSubNodeOutputNodeModel.java:173)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.ExtendedScopeNodeModel.executeModel(ExtendedScopeNodeModel.java:86)
+	at org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeOutputNodeModel.executeModel(VirtualSubNodeOutputNodeModel.java:163)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-10-23 21:42:16,178 : WARN  : comm-pool-thread-17 :  : Node : Pie Chart : 3:62:0:4 : Table contains no compatible (nominal) category columns
+2024-10-23 21:42:19,036 : WARN  : comm-pool-thread-17 :  : Node : Pie Chart : 3:62:0:4 : Table contains no compatible (nominal) category columns
+2024-10-23 21:42:58,478 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:62:0:3 valid [3:62:0:1, 3:62:0:2, 3:62:0:4] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-10-23 21:42:58,478 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:62:0:3 valid [3:62:0:1, 3:62:0:2, 3:62:0:4] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-10-23 21:43:22,329 : WARN  : main :  : CEFNodeView :  :  : ProseMirror expects the CSS white-space property to be set, preferably to 'pre-wrap'. It is recommended to load style/prosemirror.css from the prosemirror-view package. (source: http://org.knime.core.ui.dialog/uiext/defaultdialog/NodeDialog.js; line: 29236)

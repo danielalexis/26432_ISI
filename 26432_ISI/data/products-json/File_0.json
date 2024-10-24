@@ -1,0 +1,125 @@
+{
+  "Products" : {
+    "Product" : [ {
+      "ProductID" : {
+        "text" : "PRD008"
+      },
+      "ProductName" : {
+        "text" : "Keyboard"
+      },
+      "Quantity" : {
+        "text" : "16"
+      }
+    }, {
+      "ProductID" : {
+        "text" : "PRD009"
+      },
+      "ProductName" : {
+        "text" : "Mouse"
+      },
+      "Quantity" : {
+        "text" : "13"
+      }
+    }, {
+      "ProductID" : {
+        "text" : "PRD003"
+      },
+      "ProductName" : {
+        "text" : "Headphones"
+      },
+      "Quantity" : {
+        "text" : "7"
+      }
+    }, {
+      "ProductID" : {
+        "text" : "PRD011"
+      },
+      "ProductName" : {
+        "text" : "Webcam"
+      },
+      "Quantity" : {
+        "text" : "7"
+      }
+    }, {
+      "ProductID" : {
+        "text" : "PRD012"
+      },
+      "ProductName" : {
+        "text" : "External Hard Drive"
+      },
+      "Quantity" : {
+        "text" : "7"
+      }
+    }, {
+      "ProductID" : {
+        "text" : "PRD005"
+      },
+      "ProductName" : {
+        "text" : "Smartwatch"
+      },
+      "Quantity" : {
+        "text" : "6"
+      }
+    }, {
+      "ProductID" : {
+        "text" : "PRD002"
+      },
+      "ProductName" : {
+        "text" : "Smartphone"
+      },
+      "Quantity" : {
+        "text" : "5"
+      }
+    }, {
+      "ProductID" : {
+        "text" : "PRD004"
+      },
+      "ProductName" : {
+        "text" : "Tablet"
+      },
+      "Quantity" : {
+        "text" : "4"
+      }
+    }, {
+      "ProductID" : {
+        "text" : "PRD007"
+      },
+      "ProductName" : {
+        "text" : "Monitor"
+      },
+      "Quantity" : {
+        "text" : "4"
+      }
+    }, {
+      "ProductID" : {
+        "text" : "PRD001"
+      },
+      "ProductName" : {
+        "text" : "Laptop"
+      },
+      "Quantity" : {
+        "text" : "3"
+      }
+    }, {
+      "ProductID" : {
+        "text" : "PRD006"
+      },
+      "ProductName" : {
+        "text" : "Desktop Computer"
+      },
+      "Quantity" : {
+        "text" : "3"
+      }
+    }, {
+      "ProductID" : {
+        "text" : "PRD010"
+      },
+      "ProductName" : {
+        "text" : "Printer"
+      },
+      "Quantity" : {
+        "text" : "3"
+      }
+    } ]
+  }
+}

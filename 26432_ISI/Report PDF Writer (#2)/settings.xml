@@ -6,11 +6,12 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="outputFile" type="xstring" value="C:\Users\Daniel Pereira\report.pdf"/>
-        <entry key="existingFileHandlingMode" type="xstring" value="FAIL"/>
+        <entry key="outputFile" type="xstring" value="C:\Users\Alexis\report.pdf"/>
+        <entry key="existingFileHandlingMode" type="xstring" value="OVERWRITE"/>
         <entry key="selectedBrowser" type="xstring" value="CEF"/>
         <entry key="timeoutSeconds" type="xint" value="30"/>
     </config>
+    <config key="variables"/>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="EXECUTED"/>
     <entry key="factory" type="xstring" value="org.knime.reporting2.nodes.pdfwriter.ReportPdfWriterNodeFactory"/>
@@ -30,6 +31,6 @@
     <config key="ports"/>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="41cee89b-13b9-4f9f-9064-36f0a7e50f96"/>
+        <entry key="file_store_id" type="xstring" value="8535ca3c-4c32-44ce-b657-ccc5a8e4e476"/>
     </config>
 </config>
