@@ -6,7 +6,7 @@
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="file-upload-input"/>
             <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="report-debt.pdf"/>
+            <entry key="value" type="xstring" value="report-sum-client.pdf"/>
         </config>
         <config key="Variable_1">
             <entry key="type" type="xstring" value="variable"/>
@@ -15,25 +15,25 @@
             <entry key="location_present" type="xboolean" value="true"/>
             <entry key="file_system_type" type="xstring" value="CUSTOM_URL"/>
             <entry key="file_system_specifier" type="xstring" value="1000"/>
-            <entry key="path" type="xstring" value="file:/C:/Users/Alexis/AppData/Local/Programs/KNIME/report-debt.pdf"/>
+            <entry key="path" type="xstring" value="file:/C:/Users/Alexis/AppData/Local/Programs/KNIME/report-sum-client.pdf"/>
         </config>
         <config key="Variable_2">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="file-upload-input (URL)"/>
             <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="file:/C:/Users/Alexis/AppData/Local/Programs/KNIME/report-debt.pdf"/>
+            <entry key="value" type="xstring" value="file:/C:/Users/Alexis/AppData/Local/Programs/KNIME/report-sum-client.pdf"/>
         </config>
         <config key="Variable_3">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="file-upload-input (file name)"/>
             <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="report-debt.pdf"/>
+            <entry key="value" type="xstring" value="report-sum-client.pdf"/>
         </config>
         <config key="Variable_4">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="file-upload-input"/>
             <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="C:\Users\Alexis\Desktop\Aulas\ISI\26432_ISI\tmp\report-debt88zhjo0a5ssm.pdf"/>
+            <entry key="value" type="xstring" value="C:\Users\Alexis\Desktop\Aulas\ISI\26432_ISI\tmp\report-sum-clientcsg5ozikiutw.pdf"/>
         </config>
         <config key="Variable_5">
             <entry key="type" type="xstring" value="variable"/>
@@ -42,19 +42,19 @@
             <entry key="location_present" type="xboolean" value="true"/>
             <entry key="file_system_type" type="xstring" value="CUSTOM_URL"/>
             <entry key="file_system_specifier" type="xstring" value="1000"/>
-            <entry key="path" type="xstring" value="knime://knime.workflow/tmp/report-debt88zhjo0a5ssm.pdf"/>
+            <entry key="path" type="xstring" value="knime://knime.workflow/tmp/report-sum-clientcsg5ozikiutw.pdf"/>
         </config>
         <config key="Variable_6">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="file-upload-input (URL)"/>
             <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="knime://knime.workflow/tmp/report-debt88zhjo0a5ssm.pdf"/>
+            <entry key="value" type="xstring" value="knime://knime.workflow/tmp/report-sum-clientcsg5ozikiutw.pdf"/>
         </config>
         <config key="Variable_7">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="file-upload-input (file name)"/>
             <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="report-debt.pdf"/>
+            <entry key="value" type="xstring" value="report-sum-client.pdf"/>
         </config>
     </config>
     <config key="internal_node_subsettings">
@@ -62,9 +62,9 @@
     </config>
     <config key="model">
         <config key="defaultValue">
-            <entry key="path" type="xstring" value="report-debt.pdf"/>
+            <entry key="path" type="xstring" value="report-sum-client.pdf"/>
             <entry key="pathValid" type="xboolean" value="false"/>
-            <entry key="fileName" type="xstring" value="report-debt.pdf"/>
+            <entry key="fileName" type="xstring" value="report-sum-client.pdf"/>
             <entry key="localUpload" type="xboolean" value="false"/>
         </config>
         <entry key="hideInWizard" type="xboolean" value="false"/>
@@ -110,6 +110,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="62006e1c-bcb6-4bee-aa33-2c7854f333a5"/>
+        <entry key="file_store_id" type="xstring" value="942abc51-8f48-42b3-a618-dbe961f614cf"/>
     </config>
 </config>

@@ -88,6 +88,21 @@
         <entry key="nodeVersion" type="xint" value="1"/>
         <entry key="typeMatch" type="xbyte" value="0"/>
     </config>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value="CustomerID e Sum TotalPrice"/>
+        <entry key="contentType" type="xstring" value="text/plain"/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="0"/>
+        <entry key="y-coordinate" type="xint" value="0"/>
+        <entry key="width" type="xint" value="0"/>
+        <entry key="height" type="xint" value="0"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="0"/>
+        <entry key="defFontSize" type="xint" value="-1"/>
+        <entry key="annotation-version" type="xint" value="20230412"/>
+        <config key="styles"/>
+    </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="EXECUTED"/>
     <entry key="factory" type="xstring" value="org.knime.base.node.preproc.groupby.GroupByNodeFactory"/>
@@ -115,6 +130,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="2189a1a3-9469-4356-a99f-ee4cd93d8993"/>
+        <entry key="file_store_id" type="xstring" value="5f98d22f-1742-426a-8c7d-c282580d8586"/>
     </config>
 </config>
